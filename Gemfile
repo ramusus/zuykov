@@ -12,9 +12,7 @@ gem 'capistrano'
 gem 'yaml_db', :git => 'git://github.com/lostapathy/yaml_db.git'
 gem 'pg'
 
-group :test do
-  gem 'sqlite3'
-end
+gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
