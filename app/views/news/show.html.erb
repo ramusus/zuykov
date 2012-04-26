@@ -1,0 +1,38 @@
+<% content_for :title do %><%= @news.title %><% end %>
+
+<% content_for :content do %>
+    <p class="crumbs"><a href="/news/">Новости</a></p>
+
+    <article class="entry">
+       <h2 class="entry-title"><%= @news.title %></h2>
+        <%= @news.content.html_safe %>
+
+        <% if @news.comment %>
+            <section class="note">
+                <h3 class="title note-title">Комментарий нашего эксперта</h3>
+                <%= @news.comment.html_safe %>
+            </section>
+        <% end %>
+    </article><!-- /Entry -->
+
+    <div class="news_nav">
+        <% if @news_next %>
+            <div class="news_nav-prev">
+                 <h4 class="title news_nav-title">Следующая новость:</h4>
+                 <article class="news-item">
+                    <h3 class="news-item-title"><%= link_to @news_next.title, @news_next %></h3>
+                    <footer class="news-item-date"><%= l @news_next.date, :format => '%d %B' %></footer>
+                 </article>
+            </div>
+        <% end %>
+        <% if @news_prev %>
+            <div class="news_nav-next">
+                <h4 class="title news_nav-title">Предыдущая новость:</h4>
+                <article class="news-item">
+                    <h3 class="news-item-title"><%= link_to @news_prev.title, @news_prev %></h3>
+                    <footer class="news-item-date"><%= l @news_prev.date, :format => '%d %B' %></footer>
+                </article>
+            </div>
+        <% end %>
+    </div>
+<% end %>

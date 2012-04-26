@@ -1,0 +1,177 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="zuykov.ru" data-template-set="html5-reset">
+    <meta charset="utf-8">
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title><%= yield :title %></title>
+    <meta name="description" content="">
+    <meta name="google-site-verification" content="">
+    <link rel="shortcut icon" href="/i/favicon.ico">
+    <link rel="stylesheet" href="/css/zuykov.css">
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen">
+    <!-- all our JS is at the bottom of the page, except for Modernizr. -->
+    <script src="/js/modernizr-1.7.min.js"></script>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="page">
+        <header class="page-header" role="banner">
+            <div class="page-header-logo"><a href="/"><img src="/i/logo.jpg" alt=""></a></div>
+            <div class="clearfix">
+                <div class="col_l">
+                    <%= @header_quote and @header_quote.content.html_safe %>
+                </div>
+                <div class="col_r">
+                    <%= @header_phones and @header_phones.content.html_safe %>
+                </div>
+            </div>
+
+            <hr class="hr_dbl">
+
+            <%= @menu and @menu.content.html_safe %>
+        </header><!-- /Page header -->
+
+        <div class="page-content">
+            <hr class="hr hr_dbl">
+
+            <div class="columns clearfix">
+                <div class="col_c">
+                    <div class="content" role="main">
+                        <p id="notice"><%= notice %></p>
+                        <%= content_for?(:content) ? yield(:content) : yield %>
+                    </div><!-- /Content -->
+                </div><!-- /Column Center -->
+
+                <div class="col_l">
+                    <% if @left_announce %>
+                        <article class="event">
+                            <%= @left_announce.content.html_safe %>
+                        </article>
+                    <% end %>
+
+                    <section class="work">
+                        <%= @left_in_process and @left_in_process.content.html_safe %>
+                    </section>
+
+                   <section class="clients">
+                       <h2 class="title clients-title">Наши клиенты</h2>
+                       <%= @left_clients and @left_clients.content.html_safe %>
+                       <p class="clients-all"><a href="/clients/">Все клиенты</a></p>
+                   </section>
+                </div><!-- /Column Left -->
+
+                <div class="col_r">
+                    <section class="service">
+                       <p><a href="">Расчет стоимости услуг</a></p>
+                       <p><a href="">Заявка на регистрацию товарного знака</a></p>
+                       <p><a href="">Задать вопрос</a></p>
+                    </section>
+
+                    <section class="news">
+                       <h2 class="title news-title">Новости</h2>
+                       <ul class="filter">
+                           <li class="filter-item filter-item_act"><a href=""><span class="filter-item-txt">Рынок</span></a></li>
+                           <li class="filter-item"><a href=""><span class="filter-item-txt">Компания</span></a></li>
+                       </ul>
+
+                       <div lcass="filter-container">
+                           <div class="news-items">
+                                <% @news_all.each do |news| %>
+                                    <article class="news-item">
+                                        <h3 class="news-item-title"><%= link_to news.title, news %></h3>
+                                        <footer class="news-item-date"><%= l news.date, :format => '%d %B' %></footer>
+                                    </article>
+                                <% end %>
+                           </div>
+
+                           <div class="news-items" style="display:none;">
+                                <% @news_company.each do |news| %>
+                                    <article class="news-item">
+                                        <h3 class="news-item-title"><%= link_to news.title, news %></h3>
+                                        <footer class="news-item-date"><%= l news.date, :format => '%d %B' %></footer>
+                                    </article>
+                                <% end %>
+                           </div>
+                       </div>
+                       <section class="social_news">
+                           <h2 class="title social_news-title">Наши новости<br> в&nbsp;социальных сетях:</h2>
+                           <%= @right_social and @right_social.content.html_safe %>
+                           <p class="social_news-all"><a href="/news/">Архив новостей на сайте</a></p>
+                       </section>
+                    </section>
+                </div><!-- /Column Right -->
+            </div>
+
+            <hr class="hr hr_dbl">
+
+            <section class="membership">
+                <h2 class="title membership-title">Членство в международных организациях</h2>
+                <%= @membership and @membership.content.html_safe %>
+            </section>
+        </div><!-- /Page content -->
+    </div><!-- /Page -->
+
+    <footer class="page-footer" role="contentinfo">
+        <div class="clearfix">
+            <div class="col_l">
+                <%= @footer_copyright and @footer_copyright.content.html_safe %>
+                <p class="page-footer-nav"><a href="/contacts/">Контакты</a> <a href="/job/">Вакансии</a></p>
+            </div>
+            <div class="col_r">
+                <%= @footer_phones and @footer_phones.content.html_safe %>
+            </div>
+        </div>
+    </footer><!-- /Page footer -->
+
+
+<!-- here comes the javascript -->
+
+<!-- Add jQuery library -->
+<script src="/js/jquery-1.7.2.min.js"></script>
+<script src="/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox -->
+<script src="/js/fancybox/jquery.fancybox.pack.js?v=2.0.6"></script>
+<script>
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+
+        //Tabs
+        $(".filter a").click(function() {
+            $(this).parent().siblings().removeClass('filter-item_act').end().addClass('filter-item_act');
+            $(this).parents('.filter').next().children().hide().eq( $(this).parent().index() ).show();
+            return false;
+        });
+    });
+</script>
+
+
+<!-- Asynchronous google analytics; this is the official snippet.
+     Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
+
+<script>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-XXXXXX-XX']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+-->
+
+</body>
+</html>

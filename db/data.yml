@@ -1,0 +1,592 @@
+
+---
+chunks:
+  columns:
+  - id
+  - title
+  - code
+  - content
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - Цитата в хедере
+    - header_quote
+    - ! "                    <h1 class=\"page-header-title\">OOO &laquo;Зуйков и&nbsp;партнёры&raquo;
+      <sup class=\"reg\">&reg;</sup></h1>\r\n                    <blockquote>&laquo;Ничего
+      невозможного нет. Или почти нет.&raquo;<br>Сергей Зуйков</blockquote>\r\n"
+    - '2012-04-25 23:46:20.153762'
+    - '2012-04-25 23:46:20.153762'
+  - - '2'
+    - Телефоны в хедере
+    - header_phones
+    - ! "                    <p><span class=\"phone\">8-800-700-16-37</span><br><span
+      class=\"phone-comm\">(Звонки по&nbsp;России бесплатно)</span></p>\r\n                    <p><span
+      class=\"phone\">8-495-775-16-37</span><br><span class=\"email\"></span></p>\r\n"
+    - '2012-04-25 23:48:17.742366'
+    - '2012-04-25 23:48:17.742366'
+  - - '3'
+    - В делопроизводстве
+    - left_in_process
+    - ! "                       <h2 class=\"title work-title\">В делопроизводстве<br>
+      на 21 марта 2012</h2>\r\n                       <article class=\"work-item\">\r\n
+      \                          <h3 class=\"work-item-title\">Регистрация товарных
+      знаков (заявки на объекты интеллектуальной собственности)</h3>\r\n                           <footer
+      class=\"work-item-num\">685 дел</footer>\r\n                       </article>\r\n\r\n
+      \                      <hr class=\"hr hr_dbl\">\r\n\r\n                       <article
+      class=\"work-item\">\r\n                           <h3 class=\"work-item-title\">Уступка
+      товарных знаков и лицензионные договоры</h3>\r\n                           <footer
+      class=\"work-item-num\">261 дело</footer>\r\n                       </article>\r\n\r\n
+      \                      <hr class=\"hr hr_dbl\">\r\n\r\n                       <article
+      class=\"work-item\">\r\n                           <h3 class=\"work-item-title\">Защита
+      товарных знаков, патентов (заявления и возражения в Роспатенте)</h3>\r\n                           <footer
+      class=\"work-item-num\">162 дела</footer>\r\n                       </article>\r\n\r\n
+      \                      <hr class=\"hr hr_dbl\">\r\n\r\n                       <article
+      class=\"work-item\">\r\n                           <h3 class=\"work-item-title\">Защита
+      товарных знаков, патентов (судебные дела по интеллектуальной собственности)</h3>\r\n
+      \                          <footer class=\"work-item-num\">54 делa</footer>\r\n
+      \                      </article>\r\n"
+    - '2012-04-25 23:50:18.720926'
+    - '2012-04-25 23:50:18.720926'
+  - - '4'
+    - Наши клиенты
+    - left_clients
+    - ! "                       <ul class=\"clients-items\">\r\n                           <li
+      class=\"clients-item\"><a href=\"\"><img src=\"../i/temp/expert.png\" alt=\"Эксперт\"></a></li>\r\n
+      \                          <li class=\"clients-item\"><a href=\"\"><img src=\"../i/temp/scarlett.png\"
+      alt=\"Scarlett\"></a></li>\r\n                           <li class=\"clients-item\"><a
+      href=\"\"><img src=\"../i/temp/era.png\" alt=\"Эра\"></a></li>\r\n                       </ul>\r\n"
+    - '2012-04-25 23:52:38.460305'
+    - '2012-04-25 23:52:38.460305'
+  - - '5'
+    - Наши новости в социальных сетях
+    - right_social
+    - ! "                           <ul class=\"social_news-items\">\r\n                               <li
+      class=\"social_news-item\"><a href=\"\"><img src=\"../i/icon-vk.png\" alt=\"Вконтакте\"></a></li>\r\n
+      \                              <li class=\"social_news-item\"><a href=\"\"><img
+      src=\"../i/icon-fb.png\" alt=\"Facebook\"></a></li>\r\n                               <li
+      class=\"social_news-item\"><a href=\"\"><img src=\"../i/icon-twitter.png\" alt=\"Twitter\"></a></li>\r\n
+      \                          </ul>\r\n"
+    - '2012-04-25 23:56:01.202342'
+    - '2012-04-25 23:56:01.202342'
+  - - '6'
+    - Членство в международных организациях
+    - membership
+    - ! "                <ul class=\"membership-items\">\r\n                    <li
+      class=\"membership-item\">\r\n                        <a href=\"http://www.inta.org\"
+      class=\"membership-link\" target=\"blank\"><img src=\"../i/membership/inta.png\"
+      alt=\"INTA\"><br>International Trademark Association</a><br><a href=\"../i/certificates/inta.jpg\"
+      class=\"fancybox\" rel=\"group\">Сертификат</a>\r\n                    </li>\r\n
+      \                   <li class=\"membership-item\">\r\n                        <a
+      href=\"http://www.aipla.org/Pages/default.aspx\" class=\"membership-link\" target=\"blank\"><img
+      src=\"../i/membership/aipla.png\" alt=\"AIPLA\"><br>American Intellectual Property
+      Law Association</a>\r\n                    </li>\r\n                    <li
+      class=\"membership-item\">\r\n                        <a href=\"http://www.autm.net/Home.htm\"
+      class=\"membership-link\" target=\"blank\"><img src=\"../i/membership/autm.png\"
+      alt=\"AUTM\"><br>Association of University Technology Managers</a>\r\n                    </li>\r\n
+      \                   <li class=\"membership-item\">\r\n                        <a
+      href=\"http://www.ecta.org/\" class=\"membership-link\" target=\"blank\"><img
+      src=\"../i/membership/ecta.png\" alt=\"ECTA\"><br>European Community Trademark
+      Association</a>\r\n                    </li>\r\n                    <li class=\"membership-item\">\r\n
+      \                       <a href=\"http://www.americanbar.org/groups/cle/upcoming_events/national_institutes.html\"
+      class=\"membership-link\" target=\"blank\"><img src=\"../i/membership/Marques.png\"
+      alt=\"Marques\"><br>The Association of European Marks Owners</a>\r\n                    </li>\r\n
+      \                   <li class=\"membership-item\">\r\n                        <a
+      href=\"https://www.aippi.org/?sel=contact\" class=\"membership-link\" target=\"blank\"><img
+      src=\"../i/membership/iapi.png\" alt=\"IAPI\"><br>International Association
+      for the Protection of Intellectual property</a>\r\n                    </li>\r\n
+      \                   <li class=\"membership-item\">\r\n                        <a
+      href=\"http://www.ptmg.org/\" class=\"membership-link\" target=\"blank\"><img
+      src=\"../i/membership/ptmg.png\" alt=\"PTMG\"><br>Pharmaceutical Trade Marks
+      Group</a>\r\n                    </li>\r\n                    <li class=\"membership-item\">\r\n
+      \                       <a href=\"http://www.ficpi.org/index.htm\" class=\"membership-link\"
+      target=\"blank\"><img src=\"../i/membership/ficpi.png\" alt=\"FICPI\"><br>International
+      Federation of Intellectual Property Attorneys</a>\r\n                    </li>\r\n
+      \                   <li class=\"membership-item\">\r\n                        <a
+      href=\"http://www.americanbar.org/aba.html\" class=\"membership-link\" target=\"blank\"><img
+      src=\"../i/membership/aba.png\" alt=\"ABA\"><br>American BAR Association</a>\r\n
+      \                   </li>\r\n                    <li class=\"membership-item\">\r\n
+      \                       <a href=\"http://www.itma.org.uk/\" class=\"membership-link\"
+      target=\"blank\"><img src=\"../i/membership/itma.png\" alt=\"ITMA\"><br>The
+      Institute of Trade Mark Attorneys</a>\r\n                    </li>\r\n                </ul>\r\n"
+    - '2012-04-25 23:57:29.936732'
+    - '2012-04-25 23:57:29.936732'
+  - - '7'
+    - Копирайты в футере
+    - footer_copyright
+    - ! "                <p class=\"copyright\">OOO &laquo;Зуйков и&nbsp;партнёры&raquo;
+      <sup class=\"reg\">&reg;</sup>, 2004-2012</p>\r\n                <p>Регистрация
+      товарных знаков и&nbsp;патентов на&nbsp;всей территории России, международная
+      регистрация в&nbsp;любых странах мира</p>\r\n"
+    - '2012-04-25 23:58:32.549465'
+    - '2012-04-25 23:59:57.378547'
+  - - '8'
+    - Телефоны в футере
+    - footer_phones
+    - ! "                <p><span class=\"phone\">8-800-700-16-37</span><span class=\"phone-dvd\"></span><span
+      class=\"phone\">8-495-775-16-37</span></p>\r\n                <div class=\"social\">\r\n
+      \                  <p class=\"social-title\">Понравился сервис&nbsp;&mdash;
+      поддержите нас.</p>\r\n                   <ul class=\"social-items\">\r\n                       <li
+      class=\"social-item\"></li>\r\n                       <li class=\"social-item\"></li>\r\n
+      \                      <li class=\"social-item\"></li>\r\n                   </ul>\r\n
+      \               </div>\r\n"
+    - '2012-04-25 23:59:03.063687'
+    - '2012-04-25 23:59:03.063687'
+  - - '9'
+    - Анонс в левой колонке
+    - left_announce
+    - ! "                                        \r\n                       <header
+      class=\"event-meta\">Семинар, 26 апреля</header>\r\n                       <h2
+      class=\"title event-title\"><a href=\"\">Товарный знак как&nbsp;актив&nbsp;компании</a></h2>\r\n
+      \                      <p>Вход свободный, приглашаются все желающие, разбор
+      реальных случаев из&nbsp;жизни.</p>\r\n"
+    - '2012-04-26 00:11:52.384499'
+    - '2012-04-26 00:11:52.384499'
+  - - '10'
+    - Навигационное меню
+    - menu
+    - ! "<nav class=\"nav_sub\">\r\n\t<ul class=\"nav_sub-items\">\r\n\t\t<li class=\"nav_sub-item\"><a
+      href=\"/about/\">О компании</a></li><li class=\"nav_sub-item\"><a href=\"/employers/\">Сотрудники</a></li><li
+      class=\"nav_sub-item\"><a href=\"/clients/\">Клиенты</a></li><li class=\"nav_sub-item\"><a
+      href=\"/forms/\">Формы</a></li><li class=\"nav_sub-item\"><a href=\"/articles/\">Статьи</a></li><li
+      class=\"nav_sub-item\"><a href=\"/news/\">Новости</a></li><li class=\"nav_sub-item\"><a
+      href=\"/contacts/\">Контакты</a></li>\r\n\t</ul>\r\n</nav>\r\n<nav class=\"nav\"
+      role=\"navigation\">\r\n\t<ul class=\"nav-items\">\r\n\t\t<li class=\"nav-item
+      nav-item_fst\"><a href=\"/trademarks/\"><span class=\"nav-item-txt\">Товарные
+      знаки</span></a></li><li class=\"nav-item\"><a href=\"/patents/\"><span class=\"nav-item-txt\">Патенты</span></a></li><li
+      class=\"nav-item\"><a href=\"\"><span class=\"nav-item-txt\">Договоры</span></a></li><li
+      class=\"nav-item\"><a href=\"\"><span class=\"nav-item-txt\">Программы для ЭВМ</span></a></li><li
+      class=\"nav-item\"><a href=\"\"><span class=\"nav-item-txt\">Авторское право</span></a></li><li
+      class=\"nav-item nav-item_lst\"><a href=\"\"><span class=\"nav-item-txt\">Суды/ФАС</span></a></li>\r\n\t</ul>\r\n</nav>\r\n"
+    - '2012-04-26 01:11:55.41727'
+    - '2012-04-26 01:33:15.856574'
+
+---
+pages:
+  columns:
+  - id
+  - title
+  - content
+  - slug
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - ''
+    - ! "<article class=\"entry\">\r\n             \t           <h2 class=\"entry-title\">Регистрация
+      товарных знаков</h2>\r\n             \t           <p>Право на&nbsp;товарный
+      знак возникает с&nbsp;даты его государственной регистрации и&nbsp;действует
+      в&nbsp;течение 10&nbsp;лет, начиная с&nbsp;даты приоритета. Действие товарного
+      знака может быть продлено по&nbsp;заявлению правообладателя на&nbsp;следующие
+      10&nbsp;лет.</p>\r\n\r\n                           <p>OOO &laquo;Зуйков и&nbsp;партнеры&raquo;
+      регистрирует товарные знаки на&nbsp;все территории&nbsp;РФ, а&nbsp;также производит
+      международную регистрацию в&nbsp;любых странах мира.</p>\r\n                           \r\n
+      \                          <h3 class=\"entry-sectitle\">Наиболее часто оказываемые
+      нами услуги<br>по&nbsp;товарным знакам, стоимость, сроки</h3>\r\n                           <section
+      class=\"price\">\r\n                                <article class=\"price-item\">\r\n
+      \                                   <header class=\"price-item-cnt\">\r\n                                        <h4
+      class=\"title price-item-title\"><a href=\"trademarks-item.html\">Разработка
+      словесного товарного знака</a></h4>\r\n                                        <p>Для
+      разработки товарного знака необходимо: Заполнить анкету, которая предоставляется
+      после подписания договора и&nbsp;оплаты счета; Оплатить счет.</p>\r\n                                    </header>\r\n
+      \                                   <footer class=\"params\">\r\n                                        <dl
+      class=\"params-item\">\r\n                                            <dt class=\"params-item-label\">Стоимость:</dt>\r\n
+      \                                           <dd class=\"params-item-value\">62600
+      руб.</dd>\r\n                                        </dl>\r\n                                        <dl>\r\n
+      \                                           <dt class=\"params-item-label\">Срок
+      выполнения:</dt>\r\n                                            <dd class=\"params-item-value\">2
+      недели</dd>\r\n                                        </dl>\r\n                                    </footer>\r\n
+      \                               </article>\r\n\r\n                                <article
+      class=\"price-item\">\r\n                                    <header class=\"price-item-cnt\">\r\n
+      \                                       <h4 class=\"title price-item-title\">Поиск
+      сходных словесных товарных знаков до&nbsp;5-и классов (зарегистрированные знаки
+      и&nbsp;заявки)</h4>\r\n                                        <p>Для проведения
+      поиска необходимо: Предоставить словесное обозначение; Предоставить перечень
+      товаров и/или услуг для которых вы&nbsp;собираетесь использовать свой товарный
+      знак; Предоставить реквизиты плательщика; Оплатить счет.</p>\r\n                                    </header>\r\n
+      \                                   <footer class=\"params\">\r\n                                        <dl
+      class=\"params-item\">\r\n                                            <dt class=\"params-item-label\">Стоимость:</dt>\r\n
+      \                                           <dd class=\"params-item-value\">10995
+      руб.</dd>\r\n                                        </dl>\r\n                                        <dl>\r\n
+      \                                           <dt class=\"params-item-label\">Срок
+      выполнения:</dt>\r\n                                            <dd class=\"params-item-value\">4
+      дня</dd>\r\n                                        </dl>\r\n                                    </footer>\r\n
+      \                               </article>\r\n\r\n                                <article
+      class=\"price-item price-item_stop\">\r\n                                    <header
+      class=\"price-item-cnt\">\r\n                                        <h4 class=\"title
+      price-item-title\"><a href=\"trademarks-item.html\">Ускорение получения свидетельства
+      за&nbsp;8-10 мес.</a></h4>\r\n                                        <p>Временно
+      приостановлено Роспатентом.</p>\r\n                                    </header>\r\n
+      \                               </article>\r\n\r\n                                <article
+      class=\"price-item\">\r\n                                    <header class=\"price-item-cnt\">\r\n
+      \                                       <h4 class=\"title price-item-title\">Разработка
+      словесного товарного знака</h4>\r\n                                        <p>Для
+      разработки товарного знака необходимо: Заполнить анкету, которая предоставляется
+      после подписания договора и&nbsp;оплаты счета; Оплатить счет.</p>\r\n                                    </header>\r\n
+      \                                   <footer class=\"params\">\r\n                                        <dl
+      class=\"params-item\">\r\n                                            <dt class=\"params-item-label\">Стоимость:</dt>\r\n
+      \                                           <dd class=\"params-item-value\">62600
+      руб.</dd>\r\n                                        </dl>\r\n                                        <dl>\r\n
+      \                                           <dt class=\"params-item-label\">Срок
+      выполнения:</dt>\r\n                                            <dd class=\"params-item-value\">2
+      недели</dd>\r\n                                        </dl>\r\n                                    </footer>\r\n
+      \                               </article>\r\n\r\n                                <article
+      class=\"price-item\">\r\n                                    <header class=\"price-item-cnt\">\r\n
+      \                                       <h4 class=\"title price-item-title\">Поиск
+      сходных словесных товарных знаков до&nbsp;5-и классов (зарегистрированные знаки
+      и&nbsp;заявки)</h4>\r\n                                        <p>Для проведения
+      поиска необходимо: Предоставить словесное обозначение; Предоставить перечень
+      товаров и/или услуг для которых вы&nbsp;собираетесь использовать свой товарный
+      знак; Предоставить реквизиты плательщика; Оплатить счет.</p>\r\n                                    </header>\r\n
+      \                                   <footer class=\"params\">\r\n                                        <dl
+      class=\"params-item\">\r\n                                            <dt class=\"params-item-label\">Стоимость:</dt>\r\n
+      \                                           <dd class=\"params-item-value\">10995
+      руб.</dd>\r\n                                        </dl>\r\n                                        <dl>\r\n
+      \                                           <dt class=\"params-item-label\">Срок
+      выполнения:</dt>\r\n                                            <dd class=\"params-item-value\">4
+      дня</dd>\r\n                                        </dl>\r\n                                    </footer>\r\n
+      \                               </article>\r\n\r\n                                <article
+      class=\"price-item\">\r\n                                    <header class=\"price-item-cnt\">\r\n
+      \                                       <h4 class=\"title price-item-title\"><a
+      href=\"trademarks-item.html\">Поиск сходных словесных товарных знаков до&nbsp;5-и
+      классов (зарегистрированные знаки и&nbsp;заявки)</a></h4>\r\n                                        <p>Для
+      проведения поиска необходимо: Предоставить словесное обозначение; Предоставить
+      перечень товаров и/или услуг для которых вы&nbsp;собираетесь использовать свой
+      товарный знак; Предоставить реквизиты плательщика; Оплатить счет.</p>\r\n                                    </header>\r\n
+      \                                   <footer class=\"params\">\r\n                                        <dl
+      class=\"params-item\">\r\n                                            <dt class=\"params-item-label\">Стоимость:</dt>\r\n
+      \                                           <dd class=\"params-item-value\">10995
+      руб.</dd>\r\n                                        </dl>\r\n                                        <dl>\r\n
+      \                                           <dt class=\"params-item-label\">Срок
+      выполнения:</dt>\r\n                                            <dd class=\"params-item-value\">4
+      дня</dd>\r\n                                        </dl>\r\n                                    </footer>\r\n
+      \                               </article>\r\n\r\n                                <article
+      class=\"price-item\">\r\n                                    <header class=\"price-item-cnt\">\r\n
+      \                                       <h4 class=\"title price-item-title\"><a
+      href=\"trademarks-item.html\">Разработка словесного товарного знака</a></h4>\r\n
+      \                                       <p>Для разработки товарного знака необходимо:
+      Заполнить анкету, которая предоставляется после подписания договора и&nbsp;оплаты
+      счета; Оплатить счет.</p>\r\n                                    </header>\r\n
+      \                                   <footer class=\"params\">\r\n                                        <dl
+      class=\"params-item\">\r\n                                            <dt class=\"params-item-label\">Стоимость:</dt>\r\n
+      \                                           <dd class=\"params-item-value\">62600
+      руб.</dd>\r\n                                        </dl>\r\n                                        <dl>\r\n
+      \                                           <dt class=\"params-item-label\">Срок
+      выполнения:</dt>\r\n                                            <dd class=\"params-item-value\">2
+      недели</dd>\r\n                                        </dl>\r\n                                    </footer>\r\n
+      \                               </article>\r\n\r\n                                <article
+      class=\"price-item\">\r\n                                    <header class=\"price-item-cnt\">\r\n
+      \                                       <h4 class=\"title price-item-title\">Примечание:</h4>\r\n
+      \                                       <p>В&nbsp;стоимость вышеуказанных услуг
+      не&nbsp;включены пошлины.</p>\r\n                                    </header>\r\n
+      \                               </article>\r\n                           </section>\r\n
+      \                          \r\n                           <section class=\"info\">\r\n
+      \                              <h3 class=\"title info-title\">Как зарегистрировать
+      товарный знак:</h3>\r\n                               <ul>\r\n                                   <li>Создать,
+      придумать обозначение, слово, словосочетание, изображение, которое будет индивидуализировать
+      ваш товар и&nbsp;в&nbsp;последствии станет вашим товарным знаком</li>\r\n                                   <li>Провести
+      поиск вашего товарного знака на&nbsp;сходство с&nbsp;ранее зарегистрированными
+      и&nbsp;заявленными на&nbsp;регистрацию товарными знаками (патентный поиск)</li>\r\n
+      \                                  <li>Определить перечень товаров и/&nbsp;или
+      услуг для которых вы&nbsp;планируете использовать свой товарный знак, проклассифицировать
+      товары/ услуги на&nbsp;соответствие Международному Классификатору товаров и&nbsp;услуг
+      (МКТУ)</li>\r\n                                   <li>Подготовить заявку на&nbsp;регистрацию
+      вашего товарного знака и&nbsp;подать ее&nbsp;в&nbsp;Роспатент</li>\r\n                                   <li>После
+      получения решения о&nbsp;регистрации вашего товарного знака, оплатить получение
+      свидетельства на&nbsp;товарный знак</li>\r\n                                   <li>В&nbsp;случае
+      получения уведомления о&nbsp;соответствии заявленного вами товарного знака требованиям
+      законодательства, подать в&nbsp;Роспатент ответ на&nbsp;уведомление</li>\r\n
+      \                                  <li>В&nbsp;случае получения уведомления о&nbsp;соответствии
+      заявленного вами товарного знака требованиям законодательства, подать в&nbsp;Роспатент
+      ответ на&nbsp;уведомление</li>\r\n                                   <li>После
+      получения решения о&nbsp;регистрации вашего товарного знака, оплатить получение
+      свидетельства на&nbsp;товарный знак</li>\r\n                               </ul>\r\n
+      \                              <p class=\"info-note\">Если на&nbsp;каком-либо
+      этапе вы&nbsp;не&nbsp;знаете, что вам дальше делать,<br>обратитесь к&nbsp;нам,
+      мы&nbsp;вам поможем.</p>\r\n                           </section>\r\n\r\n</article>\r\n\r\n<section
+      class=\"optional\">\r\n    <h4 class=\"title_t2 optional-title\">Смежные услуги</h4>\r\n
+      \   <ul>\r\n        <li><a href=\"\">Поиск сходных изобразительных товарных
+      знаков до 5-и классов (зарегистрированные знаки и заявки)</a></li>\r\n        <li><a
+      href=\"\">Ускорение получения свидетельства 4-5 мес.</a></li>\r\n        <li><a
+      href=\"\">Разработка словесного товарного знака</a></li>\r\n    </ul>\r\n</section>\r\n\r\n<section
+      class=\"optional\">\r\n    <h4 class=\"title_t2 optional-title\">Полезная информация</h4>\r\n
+      \   <ul>\r\n        <li><a href=\"\">Различия в&nbsp;законодательстве по&nbsp;регистрации
+      товарных знаков в&nbsp;РФ, Европе и&nbsp;Америке</a></li>\r\n        <li><a
+      href=\"\">Что делать, если ваш знак не&nbsp;уникален</a></li>\r\n        <li><a
+      href=\"\">Как разработать успешный товарный знак</a></li>\r\n        <li><a
+      href=\"\">Когда надо задуматься об&nbsp;обязательной регистрации своего товарного
+      знака (для начнающих)</a></li>\r\n    </ul>\r\n</section>"
+    - trademarks
+    - '2012-04-25 23:26:10.373238'
+    - '2012-04-25 23:32:34.39832'
+  - - '2'
+    - ''
+    - ! "<p class=\"crumbs\"><a href=\"/trademarks/\">Товарные знаки</a></p>\r\n<article
+      class=\"entry\">\r\n\t<h2 class=\"entry-title\">\r\n\t\tРазработка словестного
+      товарного знака</h2>\r\n\t<section class=\"params\">\r\n\t\t<dl class=\"params-item\">\r\n\t\t\t<dt
+      class=\"params-item-label\">\r\n\t\t\t\tСтоимость:</dt>\r\n\t\t\t<dd class=\"params-item-value\">\r\n\t\t\t\t62600
+      руб.</dd>\r\n\t\t</dl>\r\n\t\t<dl class=\"params-item\">\r\n\t\t\t<dt class=\"params-item-label\">\r\n\t\t\t\tСрок
+      выполнения:</dt>\r\n\t\t\t<dd class=\"params-item-value\">\r\n\t\t\t\t2 недели</dd>\r\n\t\t</dl>\r\n\t\t<dl
+      class=\"params-item\">\r\n\t\t\t<dt class=\"params-item-label\">\r\n\t\t\t\tГеография:</dt>\r\n\t\t\t<dd
+      class=\"params-item-value\">\r\n\t\t\t\tРоссийская Федерация</dd>\r\n\t\t</dl>\r\n\t\t<dl
+      class=\"params-item\">\r\n\t\t\t<dt class=\"params-item-label\">\r\n\t\t\t\tЕще
+      какой-то краткий параметр:</dt>\r\n\t\t\t<dd class=\"params-item-value\">\r\n\t\t\t\tЗначение
+      параметра</dd>\r\n\t\t</dl>\r\n\t</section>\r\n\t<p>Для разработки товарного
+      знака необходимо: Заполнить анкету, которая предоставляется после подписания
+      договора и&nbsp;оплаты счета; Оплатить счет.</p><p>Продолжение общего описания.
+      Право на&nbsp;товарный знак возникает с&nbsp;даты его государственной регистрации
+      и&nbsp;действует в&nbsp;течение 10&nbsp;лет, начиная с&nbsp;даты приоритета.
+      Действие товарного знака может быть продлено по&nbsp;заявлению правообладателя
+      на&nbsp;следующие 10&nbsp;лет.</p><p>OOO &laquo;Зуйков и&nbsp;партнеры&raquo;
+      регистрирует товарные знаки на&nbsp;все территории&nbsp;РФ, а&nbsp;также производит
+      международную регистрацию в&nbsp;любых странах мира.</p>\r\n\t<h3>\r\n\t\tТребования
+      к материалам</h3>\r\n\t<ul>\r\n\t\t<li>На&nbsp;белой бумаге, на&nbsp;лазерном
+      принтере, на&nbsp;русском языке</li><li>Не&nbsp;привлекаться, не&nbsp;состоять,
+      не&nbsp;злоупотреблять</li><li>Быть в&nbsp;состоянии произнести название фирмы
+      и&nbsp;поставить подпись</li>\r\n\t</ul>\r\n\t<h3>\r\n\t\tНаш опыт</h3>\r\n\t<ul>\r\n\t\t<li>Постоянная
+      судебная практика и&nbsp;работа в&nbsp;Палате по&nbsp;Патентным спорам Российской
+      Федерации</li><li>6&nbsp;патентных поверенных в&nbsp;штате, со&nbsp;свободным
+      владением иностранными языками</li><li>Постоянное сотрудничество с&nbsp;патентными
+      поверенными из&nbsp;Европы, Азии, Китая, Америки, Казахстана, Украины, Белоруссии,
+      и&nbsp;стран Балтии</li>\r\n\t</ul>\r\n</article>\r\n<!-- /Entry -->\r\n<section
+      class=\"optional\">\r\n\t<h4 class=\"title_t2 optional-title\">\r\n\t\tСмежные
+      услуги</h4>\r\n\t<ul>\r\n\t\t<li><a href=\"\">Поиск сходных изобразительных
+      товарных знаков до 5-и классов (зарегистрированные знаки и заявки)</a></li><li><a
+      href=\"\">Ускорение получения свидетельства 4-5 мес.</a></li><li><a href=\"\">Разработка
+      словесного товарного знака</a></li>\r\n\t</ul>\r\n</section>\r\n<section class=\"optional\">\r\n\t<h4
+      class=\"title_t2 optional-title\">\r\n\t\tПолезная информация</h4>\r\n\t<ul>\r\n\t\t<li><a
+      href=\"\">Различия в&nbsp;законодательстве по&nbsp;регистрации товарных знаков
+      в&nbsp;РФ, Европе и&nbsp;Америке</a></li><li><a href=\"\">Что делать, если ваш
+      знак не&nbsp;уникален</a></li><li><a href=\"\">Как разработать успешный товарный
+      знак</a></li><li><a href=\"\">Когда надо задуматься об&nbsp;обязательной регистрации
+      своего товарного знака (для начнающих)</a></li>\r\n\t</ul>\r\n</section>\r\n"
+    - trademarks_new
+    - '2012-04-25 23:31:45.731518'
+    - '2012-04-26 01:38:33.318143'
+  - - '3'
+    - ''
+    - ! "            \t        <p class=\"crumbs\"><a href=\"\">Патенты</a> <span
+      class=\"crumbs-dvd\">&raquo;</span> <a href=\"\">Изобретения</a></p>\r\n                \t
+      \   <article class=\"entry\">\r\n             \t           <h2 class=\"entry-title\">Патенты</h2>\r\n
+      \            \t           <p>OOO &laquo;Зуйков и&nbsp;партнеры&raquo; регистрирует
+      патенты на&nbsp;все территории&nbsp;РФ, а&nbsp;также производит международную
+      регистрацию в&nbsp;любых странах мира.</p>\r\n                           <p>Сотрудничает
+      с&nbsp;международными патентными организациями, обладает большим опытом в&nbsp;сфере
+      регистрации и&nbsp;защиты патентного права.</p>\r\n                           <p>Готовность
+      помочь консультативно и&nbsp;практически по&nbsp;любому вопросу.</p>\r\n                           \r\n
+      \                          <h3 class=\"entry-sectitle\">Наиболее часто оказываемые
+      нами услуги<br>по разным типам патентов</h3>\r\n                           \r\n
+      \                          <section class=\"servicies\">\r\n                               <article
+      class=\"servicies-item\">\r\n                                   <h4 class=\"servicies-item-title\"><a
+      href=\"\">Изобретения</a></h4>\r\n                                   <ul>\r\n
+      \                                      <li><a href=\"\">Патентный поиск</a></li>\r\n
+      \                                      <li><a href=\"\">Подготовка и подача
+      заявки на получение патента</a></li>\r\n                                       <li><a
+      href=\"\">Подача международной заявки по процедуре ПиСиТи (PCT)</a></li>\r\n
+      \                                      <li><a href=\"\">Подготовка и подача
+      возражения в палату Роспатента на решение экспертизы</a></li>\r\n                                       <li><a
+      href=\"\">Подготовка и подача возражения против действия патента на изобретение</a></li>\r\n
+      \                                  </ul>\r\n                               </article>\r\n\r\n
+      \                              <article class=\"servicies-item\">\r\n                                   <h4
+      class=\"servicies-item-title\"><a href=\"\">Полезные модели</a></h4>\r\n                                   <ul>\r\n
+      \                                      <li><a href=\"\">Подготовка и подача
+      заявки на получение патента на полезную модель</a></li>\r\n                                       <li><a
+      href=\"\">Патентный поиск</a></li>\r\n                                       <li><a
+      href=\"\">Подача международной заявки по процедуре ПиСиТи (PCT)</a></li>\r\n
+      \                                      <li><a href=\"\">Подготовка и подача
+      возражения в палату Роспатента на решение экспертизы</a></li>\r\n                                       <li><a
+      href=\"\">Подготовка и подача возражения против действия патента на изобретение</a></li>\r\n
+      \                                  </ul>\r\n                               </article>\r\n\r\n
+      \                              <article class=\"servicies-item\">\r\n                                   <h4
+      class=\"servicies-item-title\"><a href=\"\">Промышленные образцы</a></h4>\r\n
+      \                                  <ul>\r\n                                       <li><a
+      href=\"\">Подготовка и подача заявки на получение патента на полезную модель</a></li>\r\n
+      \                                      <li><a href=\"\">Патентный поиск</a></li>\r\n
+      \                                      <li><a href=\"\">Подача международной
+      заявки по процедуре ПиСиТи (PCT)</a></li>\r\n                                       <li><a
+      href=\"\">Подготовка и подача возражения в палату Роспатента на решение экспертизы</a></li>\r\n
+      \                                      <li><a href=\"\">Подготовка и подача
+      возражения против действия патента на изобретение</a></li>\r\n                                   </ul>\r\n
+      \                              </article>\r\n                           </section>\r\n
+      \                          \r\n                           <p>Еще какая-то дополнительная
+      справочная информация, если в ней есть необходимость.</p>\r\n\r\n                \t
+      \   </article><!-- /Entry -->\r\n                \t    \r\n                        <section
+      class=\"optional\">\r\n                            <h4 class=\"title_t2 optional-title\">Смежные
+      услуги</h4>\r\n                            <ul>\r\n                                <li><a
+      href=\"\">Поиск сходных изобразительных товарных знаков до 5-и классов (зарегистрированные
+      знаки и заявки)</a></li>\r\n                                <li><a href=\"\">Ускорение
+      получения свидетельства 4-5 мес.</a></li>\r\n                                <li><a
+      href=\"\">Разработка словесного товарного знака</a></li>\r\n                            </ul>\r\n
+      \                       </section>\r\n\r\n                        <section class=\"optional\">\r\n
+      \                           <h4 class=\"title_t2 optional-title\">Полезная информация</h4>\r\n
+      \                           <ul>\r\n                                <li><a href=\"\">Различия
+      в&nbsp;законодательстве по&nbsp;регистрации товарных знаков в&nbsp;РФ, Европе
+      и&nbsp;Америке</a></li>\r\n                                <li><a href=\"\">Что
+      делать, если ваш знак не&nbsp;уникален</a></li>\r\n                                <li><a
+      href=\"\">Как разработать успешный товарный знак</a></li>\r\n                                <li><a
+      href=\"\">Когда надо задуматься об&nbsp;обязательной регистрации своего товарного
+      знака (для начнающих)</a></li>\r\n                            </ul>\r\n                        </section>\r\n"
+    - patents
+    - '2012-04-25 23:34:15.234028'
+    - '2012-04-26 00:06:51.725468'
+  - - '4'
+    - Главная
+    - ! "<article class=\"entry\">\r\n\t<h2>\r\n\t\tРегистрация и&nbsp;защита прав
+      на&nbsp;объекты интеллектуальной собственности на&nbsp;всей территории России,
+      международная регистрация в&nbsp;любых странах мира</h2>\r\n\t<figure class=\"object
+      object_l\">\r\n\t\t<p>\r\n\t\t\t<img alt=\"\" src=\"../i/temp/a1.jpg\" /></p>\r\n\t\t<figcaption
+      class=\"object-caption\">\r\n\t\t<p>\r\n\t\t\tСергей Зубков</p>\r\n\t\t</figcaption></figure>\r\n\t<p>\r\n\t\tНаша
+      фирма оказывает широкий спектр услуг в&nbsp;узкой специализации Гражданского
+      права по&nbsp;охране и&nbsp;защите прав на&nbsp;интеллектуальную собственность.
+      Одно из&nbsp;успешных направлений нашей деятельности это решение вопросов, возникающих
+      в&nbsp;спорах на&nbsp;товарные знаки, патенты, авторские права, а&nbsp;также
+      на&nbsp;другие объекты прав интеллектуальной собственности.</p>\r\n\t<h3>\r\n\t\tНаша
+      деятельность:</h3>\r\n\t<ul>\r\n\t\t<li>\r\n\t\t\tПостоянная судебная практика
+      и&nbsp;работа в&nbsp;Палате по&nbsp;Патентным спорам Российской Федерации</li>\r\n\t\t<li>\r\n\t\t\t6&nbsp;патентных
+      поверенных в&nbsp;штате, со&nbsp;свободным владением иностранными языками</li>\r\n\t\t<li>\r\n\t\t\tПостоянное
+      сотрудничество с&nbsp;патентными поверенными из&nbsp;Европы, Азии, Китая, Америки,
+      Казахстана, Украины, Белоруссии, и&nbsp;стран Балтии</li>\r\n\t\t<li>\r\n\t\t\tЧленство
+      в&nbsp;Международной ассоциации патентных поверенных (INTA)</li>\r\n\t\t<li>\r\n\t\t\tПредставление
+      интересов клиентов в&nbsp;административных и&nbsp;судебных органах</li>\r\n\t\t<li>\r\n\t\t\tОперативное
+      оповещение наших клиентов о&nbsp;ходе регистрационного процесса объектов прав
+      интеллектуальной собственности</li>\r\n\t\t<li>\r\n\t\t\tКонсультации и&nbsp;помощь
+      в&nbsp;составлении и&nbsp;проведении договоров на&nbsp;регистрации, уступки,
+      передаче прав на&nbsp;объекты интеллектуальной собственности</li>\r\n\t\t<li>\r\n\t\t\tЗащита
+      товарных знаков, полезных моделей, изобретений, промышленных образцов и&nbsp;другой
+      интеллектуальной собственности</li>\r\n\t</ul>\r\n\t<p>\r\n\t\tОтличие нашей
+      компании от&nbsp;других фирм, работающих на&nbsp;этом рынке в&nbsp;том, что
+      наши знания, практический опыт и&nbsp;нестандартное мышление нашего руководства
+      поможет превратить вашу мечту в&nbsp;реальность. И&nbsp;это не&nbsp;просто слова
+      это видно по&nbsp;результатам нашей деятельности.</p>\r\n</article>\r\n<!--
+      /Entry -->"
+    - ''
+    - '2012-04-25 23:36:20.481676'
+    - '2012-04-26 01:09:17.549306'
+  - - '5'
+    - О компании
+    - ! "<p>\r\n\tО компании</p>\r\n"
+    - about
+    - '2012-04-26 00:55:18.248352'
+    - '2012-04-26 00:55:18.248352'
+  - - '6'
+    - Клиенты
+    - ! "<p>\r\n\tКлиенты</p>\r\n"
+    - clients
+    - '2012-04-26 01:10:02.389595'
+    - '2012-04-26 01:10:02.389595'
+  - - '7'
+    - Контакты
+    - ! "<p>\r\n\tКонтакты</p>\r\n"
+    - contacts
+    - '2012-04-26 01:10:36.701968'
+    - '2012-04-26 01:10:36.701968'
+
+---
+users:
+  columns:
+  - id
+  - email
+  - encrypted_password
+  - reset_password_token
+  - reset_password_sent_at
+  - remember_created_at
+  - sign_in_count
+  - current_sign_in_at
+  - last_sign_in_at
+  - current_sign_in_ip
+  - last_sign_in_ip
+  - created_at
+  - updated_at
+  records: 
+  - - '1'
+    - ramusus@gmail.com
+    - $2a$10$t6Vxv4ZA3HvRl1aOiCluS.Nv3.F0U3MiFM8Vyrqiqj7.W/k87vQCO
+    - !!null 
+    - !!null 
+    - !!null 
+    - '1'
+    - '2012-04-25 23:07:04.276036'
+    - '2012-04-25 23:07:04.276036'
+    - 127.0.0.1
+    - 127.0.0.1
+    - '2012-04-25 23:07:04.221415'
+    - '2012-04-25 23:07:04.276798'
+
+---
+news:
+  columns:
+  - id
+  - title
+  - content
+  - date
+  - created_at
+  - updated_at
+  - of_company
+  - special
+  - comment
+  records: 
+  - - '1'
+    - ! 'МВД: экс-начальник московского метро Гаев законно получил 112 млн руб. за
+      патент на систему оплаты проезда в подземке'
+    - ! "<p>Уголовное дело в&nbsp;отношении бывшего начальника Московского метрополитена
+      Дмитрия Гаева прекращено Следственным департаментом МВД России, сообщает пресс-служба
+      СД.</p><p>Как отмечается в&nbsp;сообщении, в&nbsp;ходе следствия &laquo;получены
+      заключения специалистов в&nbsp;различных областях права, в&nbsp;результате установлено,
+      что Дмитрий Гаев имел право выступать патентообладателем и&nbsp;заключать лицензионный
+      договор, в&nbsp;соответствии с&nbsp;которым выплачено 112 миллионов рублей в&nbsp;качестве
+      вознаграждения&raquo;.</p>\r\n<figure class=\"object\">\r\n\t<img alt=\"\" src=\"../i/temp/a2.jpg\"
+      /></figure>\r\n<p>Напомним, что уголовное дело по&nbsp;ст. 201&nbsp;УК РФ&nbsp;(злоупотребление
+      полномочиями) было возбуждено в&nbsp;отношении Гаева в&nbsp;марте 2011&nbsp;года.
+      Бывший начальник Московского метрополитена подозревался в&nbsp;получении незаконного
+      дохода в&nbsp;112 млн рублей за&nbsp;&laquo;присвоенный&raquo; патент на&nbsp;изобретение
+      автоматизированной системы оплаты проезда в&nbsp;метро.</p><p>По&nbsp;данным
+      СД&nbsp;МВД, в&nbsp;1997 году ГУП &laquo;Московский метрополитен&raquo; в&nbsp;соответствии
+      с&nbsp;заключенными договорами получил оборудование и&nbsp;внедрил автоматизированные
+      системы оплаты проезда на&nbsp;московском метрополитене с&nbsp;применением магнитных
+      билетов. Участвуя в&nbsp;реализации договоров в&nbsp;качестве руководителя предприятия,
+      Гаев для извлечения личной выгоды 16&nbsp;января 1998 года направил заявку,
+      а&nbsp;затем получил патент на&nbsp;изобретение автоматизированной системы оплаты
+      проезда и&nbsp;проверки проездных на&nbsp;транспорте. В&nbsp;дальнейшем Гаев,
+      пользуясь служебным положением, заключил лицензионный договор на&nbsp;использование
+      данной системы, и&nbsp;с&nbsp;1999-го по&nbsp;2010 годы получил от&nbsp;предприятия
+      те&nbsp;самые 112 миллионов рублей в&nbsp;качестве вознаграждения (12&nbsp;миллионов
+      сразу и&nbsp;по&nbsp;10&nbsp;миллионов рублей ежегодно).</p>"
+    - '2012-03-29'
+    - '2012-04-25 23:13:26.528411'
+    - '2012-04-26 01:54:37.769597'
+    - false
+    - true
+    - <p>Изобретательный мужик, честные глаза, советский пиджак только непонятно почему
+      носит до&nbsp;сих пор при таком обороте.</p><p>Напомним, что отставки, а&nbsp;затем
+      и&nbsp;возбуждения уголовного дела в&nbsp;отношении Гаева добивалась Генпрокуратура
+      России после проверки, проведенной в&nbsp;2010&nbsp;году. В&nbsp;ходе нее были
+      выявлены многочисленные нарушения закона, в&nbsp;том числе при проведении торгов
+      и&nbsp;покрытии издержек за&nbsp;счет необоснованного завышения цен на&nbsp;проезд
+      для пассажиров.</p>
+  - - '2'
+    - Весенний семинар «Защита прав на интеллектуальную собственность»
+    - ! "24 мая 2012 года в Москве, в отеле Ренессанс Москва Олимпик состоится весенний
+      семинар «Защита прав на интеллектуальную собственность», организованный компанией
+      «Зуйков и партнеры». Мероприятие продолжит серию семинаров, проводимых компанией,
+      и направленных на повышение уровня знаний представителей бизнеса в сфере охраны
+      интеллектуальной собственности. <br>\r\n\tНа семинаре выступят сотрудники компании
+      «Зуйков и партнеры» и члены Международной ассоциации патентных поверенных (INTA).
+      Основными темами мероприятия станут: <br><br>\r\n•\tРегистрация товарных знаков
+      за рубежом;<br>\r\n•\tНеобходимость экспортеру регистрации товарного знака в
+      Китае;<br>\r\n•\tОтчуждение исключительного права и предоставление права использования
+      объектов интеллектуальной собственности (уступка и лицензия) по международным
+      регистрациям;<br>\r\n•\tЗарубежное патентование изобретений: процедура PCT (ПиСиТи)
+      и национальная процедура – выбор оптимального варианта;<br>\r\n•\tСудебные споры
+      по товарным знакам, особенности рассмотрения дел о прекращении действия товарных
+      знаков по неиспользованию арбитражными судами. Интересные дела из практики ООО
+      «Зуйков и партнёры»<br><br>\r\nСтоит особо отметить, что список тем семинара
+      формировался компанией исходя из вопросов, интересующих ее клиентов. Информация,
+      озвучиваемая на семинаре, без сомнения будет полезна всем представителям бизнеса.
+      Поскольку, с увеличением числа объектов интеллектуальной собственности увеличивается
+      и количество споров по данной проблематике. <br>"
+    - '2012-04-13'
+    - '2012-04-26 00:36:48.584949'
+    - '2012-04-26 00:39:11.038079'
+    - true
+    - false
+    - !!null 

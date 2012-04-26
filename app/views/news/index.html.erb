@@ -1,0 +1,17 @@
+<% content_for :title do %>Новости<% end %>
+
+<% content_for :content do %>
+    <article class="entry">
+       <h2 class="entry-title">Новости</h2>
+       <p>Наши специалисты дают комментарии и&nbsp;рассказывают о&nbsp;значимых событиях и&nbsp;изменениях в&nbsp;правовой сфере, а&nbsp;также деятельности компании.</p>
+    </article><!-- /Entry -->
+
+    <section class="news">
+        <% @news.each do |news| %>
+            <article class="news-item<% if news.of_company %>  news-item_company<% end %><% if news.special %>  news-item_special<% end %>">
+                <h3 class="news-item-title"><%= link_to news.title, news %><% if news.comment %> (с комментариями)<% end %></h3>
+                <footer class="news-item-date"><% if news.of_company %>Новость компании, <% end %><%= l news.date, :format => '%d %B' %></footer>
+            </article>
+        <% end %>
+    </section>
+<% end %>

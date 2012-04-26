@@ -1,0 +1,21 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: zuykov
+  pool: 5
+  username: zuykov
+  password: eqwe3s_sd3kic
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: zuykov
+  pool: 5
+  username: zuykov
+  password: eqwe3s_sd3kic

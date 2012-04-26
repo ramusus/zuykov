@@ -1,0 +1,28 @@
+ru:
+  time:
+    formats:
+      default: "%e %B"
+  activerecord:
+    models:
+      page: "Страница"
+      user: "Пользователь"
+      chunk: "Блок"
+      news: "Новость"
+    attributes:
+      page:
+        title: "Заголовок"
+        slug: "Адрес"
+        content: "Основной блок"
+      news:
+        title: "Заголовок"
+        date: "Дата"
+        content: "Основной блок"
+        of_company: "Новость компании"
+        special: "Специально помеченная"
+        comment: "Комментарий эксперта"
+      chunk:
+        title: "Название"
+        code: "Код"
+        content: "Содержимое"
+      user:
+        new_query_email: "Оповещать о новых заявках"
