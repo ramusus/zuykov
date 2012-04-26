@@ -1,4 +1,4 @@
-<% content_for :title do %><%= @article.title %><% end %>
+<% content_for :title do %><%= @article.title.html_safe %><% end %>
 
 <% content_for :content do %>
     <p class="crumbs"><%= link_to 'Статьи', articles_path() %></p>
