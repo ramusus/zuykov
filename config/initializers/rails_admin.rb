@@ -85,7 +85,7 @@ RailsAdmin.config do |config|
     end
     show do
       include_fields :title, :slug
-      include_fields :content do
+      include_fields :content, :service, :info do
         pretty_value do
           value.html_safe
          end
@@ -93,7 +93,28 @@ RailsAdmin.config do |config|
     end
     edit do
       include_fields :title, :slug
-      include_fields :content do
+      include_fields :content, :service, :info do
+        ckeditor true
+        ckeditor_config_js '/javascripts/ckeditor/config.js'
+      end
+    end
+  end
+
+  config.model Article do
+    list do
+      include_fields :title, :subtitle
+    end
+    show do
+      include_fields :title, :subtitle
+      include_fields :content, :see_also do
+        pretty_value do
+          value.html_safe
+         end
+      end
+    end
+    edit do
+      include_fields :title, :subtitle
+      include_fields :content, :see_also do
         ckeditor true
         ckeditor_config_js '/javascripts/ckeditor/config.js'
       end
@@ -106,7 +127,7 @@ RailsAdmin.config do |config|
     end
     show do
       include_fields :title, :date, :of_company, :special
-      include_fields :content do
+      include_fields :content, :comment, :see_also do
         pretty_value do
           value.html_safe
          end
@@ -114,7 +135,7 @@ RailsAdmin.config do |config|
     end
     edit do
       include_fields :title, :date, :of_company, :special
-      include_fields :content, :comment do
+      include_fields :content, :comment, :see_also do
         ckeditor true
         ckeditor_config_js '/javascripts/ckeditor/config.js'
       end

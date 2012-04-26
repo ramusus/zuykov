@@ -1,0 +1,19 @@
+<% content_for :title do %><%= @article.title %><% end %>
+
+<% content_for :content do %>
+    <p class="crumbs"><%= link_to 'Статьи', articles_path() %></p>
+
+    <article class="entry">
+       <h2 class="entry-title"><%= @article.title.html_safe %></h2>
+        <%= @article.content.html_safe %>
+
+        <% if @article.see_also.strip.length != 0 %>
+            <section class="more">
+                <h4 class="title more-title">Смотрите также:</h4>
+                <%= @article.see_also.html_safe %>
+            </section>
+        <% end %>
+
+    </article><!-- /Entry -->
+
+<% end %>

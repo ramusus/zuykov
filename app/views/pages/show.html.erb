@@ -2,4 +2,19 @@
 
 <% content_for :content do %>
     <%= @page.content.html_safe %>
+
+    <% if @page.service.strip.length != 0 %>
+        <section class="more">
+            <h4 class="title more-title">Смежные услуги:</h4>
+            <%= @page.service.html_safe %>
+        </section>
+    <% end %>
+
+    <% if @page.info.strip.length != 0 %>
+        <section class="more">
+            <h4 class="title more-title">Полезная информация:</h4>
+            <%= @page.info.html_safe %>
+        </section>
+    <% end %>
+
 <% end %>

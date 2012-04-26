@@ -3,6 +3,7 @@ Project::Application.routes.draw do
 
   devise_for :users
   resources :news
+  resources :articles
 
   match "/:slug/" => "pages#show"
   root :to => "pages#show"

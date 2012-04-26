@@ -1,0 +1,16 @@
+<% content_for :title do %>Статьи<% end %>
+
+<% content_for :content do %>
+    <article class="entry">
+       <h2 class="entry-title">Статьи</h2>
+    </article><!-- /Entry -->
+
+    <section class="news">
+        <% @articles.each do |article| %>
+            <article class="news-item">
+                <h3 class="news-item-title"><%= link_to article.title, article %></h3>
+                <footer class="news-item-date"><%= article.subtitle %></footer>
+            </article>
+        <% end %>
+    </section>
+<% end %>

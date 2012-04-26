@@ -8,11 +8,14 @@ ru:
       user: "Пользователь"
       chunk: "Блок"
       news: "Новость"
+      articles: "Статья"
     attributes:
       page:
         title: "Заголовок"
         slug: "Адрес"
         content: "Основной блок"
+        service: "Смежные услуги"
+        info: "Полезная информация"
       news:
         title: "Заголовок"
         date: "Дата"
@@ -20,6 +23,12 @@ ru:
         of_company: "Новость компании"
         special: "Специально помеченная"
         comment: "Комментарий эксперта"
+        see_also: "Смотрите также"
+      article:
+        title: "Заголовок"
+        subtitle: "Подзаголовок"
+        content: "Основной блок"
+        see_also: "Смотрите также"
       chunk:
         title: "Название"
         code: "Код"

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120426022723) do
+ActiveRecord::Schema.define(:version => 20120426125652) do
 
   create_table "chunks", :force => true do |t|
     t.string   "title"
@@ -30,6 +30,16 @@ ActiveRecord::Schema.define(:version => 20120426022723) do
     t.boolean  "of_company"
     t.boolean  "special"
     t.text     "comment"
+    t.text     "see_also"
+  end
+
+  create_table "articles", :force => true do |t|
+    t.string   "title"
+    t.string   "subtitle"
+    t.text     "content"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.text     "see_also"
   end
 
   create_table "pages", :force => true do |t|
@@ -38,6 +48,8 @@ ActiveRecord::Schema.define(:version => 20120426022723) do
     t.string   "slug"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.text     "service"
+    t.text     "info"
   end
 
   create_table "rails_admin_histories", :force => true do |t|
