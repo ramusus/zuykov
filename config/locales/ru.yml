@@ -8,7 +8,7 @@ ru:
       user: "Пользователь"
       chunk: "Блок"
       news: "Новость"
-      articles: "Статья"
+      article: "Статья"
     attributes:
       page:
         title: "Заголовок"
