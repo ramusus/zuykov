@@ -9,7 +9,7 @@
     <section class="news">
         <% @news.each do |news| %>
             <article class="news-item<% if news.of_company %>  news-item_company<% end %><% if news.special %>  news-item_special<% end %>">
-                <h3 class="news-item-title"><%= link_to news.title, news %><% if news.comment %> (с комментариями)<% end %></h3>
+                <h3 class="news-item-title"><%= link_to news.title.html_safe, news %><% if news.has_comment %> (с комментариями)<% end %></h3>
                 <footer class="news-item-date"><% if news.of_company %>Новость компании, <% end %><%= l news.date, :format => '%d %B' %></footer>
             </article>
         <% end %>

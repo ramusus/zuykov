@@ -7,14 +7,14 @@
        <h2 class="entry-title"><%= @news.title.html_safe %></h2>
         <%= @news.content.html_safe %>
 
-        <% if @news.comment and @news.comment.strip.length != 0 %>
+        <% if @news.has_comment %>
             <section class="note">
                 <h3 class="title note-title">Комментарий нашего эксперта</h3>
                 <%= @news.comment.html_safe %>
             </section>
         <% end %>
 
-        <% if @news.see_also and @news.see_also.strip.length != 0 %>
+        <% if @news.has_see_also %>
             <section class="more">
                 <h4 class="title more-title">Смотрите также:</h4>
                 <%= @news.see_also.html_safe %>

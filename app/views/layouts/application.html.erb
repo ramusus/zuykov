@@ -18,7 +18,9 @@
     <!-- Add fancyBox -->
     <link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css?v=2.0.6" type="text/css" media="screen">
     <!-- all our JS is at the bottom of the page, except for Modernizr. -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="/js/modernizr-1.7.min.js"></script>
+    <script src="/js/calc.js"></script>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -88,7 +90,7 @@
                            <div class="news-items">
                                 <% @news_all.each do |news| %>
                                     <article class="news-item">
-                                        <h3 class="news-item-title"><%= link_to news.title, news %></h3>
+                                        <h3 class="news-item-title"><%= link_to news.title.html_safe, news %></h3>
                                         <footer class="news-item-date"><%= l news.date, :format => '%d %B' %></footer>
                                     </article>
                                 <% end %>
@@ -97,7 +99,7 @@
                            <div class="news-items" style="display:none;">
                                 <% @news_company.each do |news| %>
                                     <article class="news-item">
-                                        <h3 class="news-item-title"><%= link_to news.title, news %></h3>
+                                        <h3 class="news-item-title"><%= link_to news.title.html_safe, news %></h3>
                                         <footer class="news-item-date"><%= l news.date, :format => '%d %B' %></footer>
                                     </article>
                                 <% end %>

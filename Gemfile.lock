@@ -69,7 +69,7 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
-    ckeditor (3.7.0.rc2)
+    ckeditor (3.7.0.rc3)
       mime-types (~> 1.17.2)
       orm_adapter (~> 0.0.6)
     ckeditor_rails (3.6.2.2)
@@ -191,7 +191,7 @@ PLATFORMS
 DEPENDENCIES
   auto_migrations!
   capistrano
-  ckeditor (= 3.7.0.rc2)
+  ckeditor (= 3.7.0.rc3)
   ckeditor_rails
   coffee-rails (~> 3.2.1)
   devise
