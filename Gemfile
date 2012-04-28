@@ -8,13 +8,16 @@ gem 'devise' # rails_admin dependency
 gem "ckeditor", "3.7.0.rc3"
 #gem 'ckeditor_rails', :require => 'ckeditor-rails'
 gem 'paperclip', '~> 2.4'
-gem 'capistrano'
-gem 'rvm-capistrano'
 gem 'yaml_db', :git => 'git://github.com/lostapathy/yaml_db.git'
 #gem 'mail_form'
 gem 'pg'
 
 gem 'sqlite3'
+
+gem 'capistrano'
+gem 'rvm-capistrano'
+gem 'capistrano-deepmodules'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
