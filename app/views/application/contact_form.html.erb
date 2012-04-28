@@ -1,0 +1,15 @@
+<% content_for :title do %>Задать вопрос<% end %>
+
+<% content_for :content do %>
+
+<h2 class="entry-title">Задать вопрос</h2>
+
+    <%= form_for @user do |f| %>
+        <%= f.text_field :name %>
+        <%= f.text_field :email %>
+        <%= f.text_area :message %>
+        <input type="submit" value="Отправить"/>
+    <% end %>
+
+
+<% end %>

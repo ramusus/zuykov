@@ -4,7 +4,9 @@
     <p class="crumbs"><%= link_to 'Новости', '/news/' %></p>
 
     <article class="entry">
-       <h2 class="entry-title"><%= @news.title.html_safe %></h2>
+        <h2 class="entry-title"><%= @news.title.html_safe %></h2>
+        <p><em><%= l @news.date, :format => '%d %B' %></em></p>
+
         <%= @news.content.html_safe %>
 
         <% if @news.has_comment %>

@@ -1,0 +1,3 @@
+[submodule "rack"]
+      path = public/layout
+      url = git://github.com/tindra/Zuykov.git

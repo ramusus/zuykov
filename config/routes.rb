@@ -6,8 +6,9 @@ Project::Application.routes.draw do
   resources :news
   resources :articles
 
-  match "/calculator/" => "application#calculator"
-  match "/request/" => "application#request"
+  match "/calculator/" => "application#calculator_form", :as => 'calculator_form'
+  match "/request/" => "application#request_form", :as => 'request_form'
+  match "/contact/" => "application#contact_form", :as => 'contact_form'
   match "/:slug/" => "pages#show"
   root :to => "pages#show"
 

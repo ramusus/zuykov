@@ -6,10 +6,12 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 gem 'auto_migrations', :git => 'git://github.com/antage/auto_migrations.git'
 gem 'devise' # rails_admin dependency
 gem "ckeditor", "3.7.0.rc3"
-gem 'ckeditor_rails', :require => 'ckeditor-rails'
+#gem 'ckeditor_rails', :require => 'ckeditor-rails'
 gem 'paperclip', '~> 2.4'
 gem 'capistrano'
+gem 'rvm-capistrano'
 gem 'yaml_db', :git => 'git://github.com/lostapathy/yaml_db.git'
+#gem 'mail_form'
 gem 'pg'
 
 gem 'sqlite3'
