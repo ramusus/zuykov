@@ -36,7 +36,17 @@ ru:
         code: "Код"
         content: "Содержимое"
       user:
-        new_query_email: "Оповещать о новых заявках"
+        email: "Email"
+        password: "Пароль"
+        password_confirmation: "Подтверждение пароля"
+        reset_password_sent_at: "Сброс пароля"
+        remember_created_at: "Сохранение авторизации"
+        sign_in_count: "Кол-во авторизаций"
+        current_sign_in_at: "Текущая авторизация"
+        last_sign_in_at: "Предыдущая авторизация"
+        current_sign_in_ip: "Текущий IP"
+        last_sign_in_ip: "Предыдущий IP"
+        email_notifications: "Оповещать о новых заявках и вопросах"
       question:
         name: "Имя"
         email: "Email"

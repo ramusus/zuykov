@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 class Trademark < ActiveRecord::Base
-  attr_accessible :title, :research, :research_limit, :registration_limit, :service, :mktu, :comments, :name, :requisites, :email, :phone, :contact
+  attr_accessible :title, :research, :research_limit, :registration_limit, :service, :mktu, :comments, :name, :requisites, :email, :phone, :contact, :title_image, :title_mixed, :requisites_file
 
   validates :registration_limit, :presence => true
   validates :service, :presence => true
