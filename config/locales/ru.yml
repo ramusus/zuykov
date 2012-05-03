@@ -9,6 +9,8 @@ ru:
       chunk: "Блок"
       news: "Новость"
       article: "Статья"
+      trademark: "Заявка на товарный знак"
+      question: "Вопрос"
     attributes:
       page:
         title: "Заголовок"
@@ -35,3 +37,23 @@ ru:
         content: "Содержимое"
       user:
         new_query_email: "Оповещать о новых заявках"
+      question:
+        name: "Имя"
+        email: "Email"
+        message: "Сообщение"
+      trademark:
+        title: "Словесный"
+        title_image: "Изобразительный"
+        title_mixed: "Комбинированный"
+        research: "Поиск сходных знаков"
+        research_limit: "Срок исполнения поиска"
+        registration_limit: "Срок регистрации ТЗ"
+        service: "Товары и/или услуги, для которых будет использоваться знак"
+        mktu: "Классы МКТУ"
+        comments: "Ваши комментарии"
+        name: "Наименование заявителя"
+        requisites: "Реквизиты заявителя"
+        requisites_file: "Реквизиты заявителя"
+        email: "Эл. почта контактного лица"
+        phone: "Телефон"
+        contact: "Контактное лицо"

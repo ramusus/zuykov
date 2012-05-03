@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120428203142) do
+ActiveRecord::Schema.define(:version => 20120503192443) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -66,6 +66,14 @@ ActiveRecord::Schema.define(:version => 20120428203142) do
     t.text     "info"
   end
 
+  create_table "questions", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "message"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"
     t.string   "username"
@@ -78,6 +86,35 @@ ActiveRecord::Schema.define(:version => 20120428203142) do
   end
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
+
+  create_table "trademarks", :force => true do |t|
+    t.string   "title"
+    t.string   "title_image_file_name"
+    t.string   "title_image_content_type"
+    t.integer  "title_image_file_size"
+    t.datetime "title_image_updated_at"
+    t.string   "title_mixed_file_name"
+    t.string   "title_mixed_content_type"
+    t.integer  "title_mixed_file_size"
+    t.datetime "title_mixed_updated_at"
+    t.boolean  "research"
+    t.string   "research_limit"
+    t.string   "registration_limit"
+    t.text     "service"
+    t.string   "mktu"
+    t.text     "comments"
+    t.string   "name"
+    t.text     "requisites"
+    t.string   "requisites_file_file_name"
+    t.string   "requisites_file_content_type"
+    t.integer  "requisites_file_file_size"
+    t.datetime "requisites_file_updated_at"
+    t.string   "email"
+    t.string   "phone"
+    t.string   "contact"
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

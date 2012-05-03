@@ -26,10 +26,4 @@ class ApplicationController < ActionController::Base
   def calculator_form
   end
 
-  def request_form
-  end
-
-  def contact_form
-  end
-
 end
