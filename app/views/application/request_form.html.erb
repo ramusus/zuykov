@@ -1,282 +1,65 @@
-<% content_for :title do %>Подать заявку на регистрацию товарного знака<% end %>
+<%= form_for(@trademark) do |f| %>
+  <% if @trademark.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trademark.errors.count, "error") %> prohibited this trademark from being saved:</h2>
 
-<% content_for :content do %>
+      <ul>
+      <% @trademark.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
 
-<h2 class="entry-title">Подать заявку на регистрацию товарного знака</h2>
-
-<form method="post" enctype="multipart/form-data" action="/form.php" onsubmit="return CheckForm(this)"  >
-  <p style="font-size:14px; font-family:tahoma; color:#000000; margin-left: 10px; margin: 10px 7px 7px 15px;">После отправки данной формы, мы свяжемся с вами для уточнения недостающей информации.<br />
-Мы направим вам по эл.почте договор на оказание услуг в котором будут указаны стоимость услуг и размер официальных пошлин.<br> Рассчитать стоимость услуг можно <a href="http://www.zuykov.ru/calc.html" class="style77"><u>здесь</u></a></p>
-  <br><p style="font-size:14px; font-family:tahoma; color:#000000; margin-left: 10px; margin: 10px 7px 7px 15px;">Товарный знак для регистрации:<font color="red">*</font></p>
- <table style="font-size:14px; font-family:tahoma; color:#000000; margin-left: 10px;">
-        <tr>
-          <td nowrap="nowrap"></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td align="left"><table>
-            <tbody>
-              <tr>
-                <td><label for="vidslov"><br>
-                  <input name="vidslov" id="vidslov" value="1" checked="checked" type="radio" / >
-                  Словесный</label>
-                  &nbsp; </td>
-              </tr>
-              <tr>
-                <td><label for="vidizo"><br>
-                  <input name="vidslov" id="vidizo" value="2" type="radio" />
-                  Изобразительный</label>
-                  &nbsp; </td>
-              </tr>
-              <tr>
-                <td><br><label for="vidcombo">
-                  <input name="vidslov" id="vidcombo" value="3" type="radio" />
-                  Комбинированный</label>
-                  &nbsp; </td>
-              </tr>
-            </tbody>
-          </table></td>
-          <td align="left"><table>
-            <tbody>
-              <tr>
-                <td><br><input size="35" name="editVID" id="editslov" type="text" /></td>
-              </tr>
-              <tr>
-                <td><br><input name="editVID" id="editizo" type="file" disabled="disabled"/></td>
-              </tr>
-              <tr>
-                <td><br><input name="editcombo2" id="editcombo2" type="file" disabled="disabled" /></td>
-              </tr>
-            </tbody>
-          </table></td>
-        </tr>
-        <tr>
-          <td><p>Поиск сходных знаков:<font color="red">*</font></p></td>
-          <td><select name="ppp" id="ppp">
-            <option value="1" selected="selected">да</option>
-            <option value="0">нет</option>
-          </select></td>
-        </tr>
-        <tr>
-          <td><p>Срок исполнения поиска:<font color="red">*</font></p></td>
-          <td><select name="srokIsp" id="srokIsp">
-            <option value="1-2 дня">1-2 дня</option>
-            <option value="3-4 дня" selected="selected">3-4 дня</option>
-
-          </select></td>
-        </tr>
-        <tr>
-          <td><p>Срок регистрации ТЗ:<font color="red">*</font></p></td>
-          <td><select id="srokReg" name="srokReg">
-            <option value="12-14 месяцев" selected="selected">12-14 месяцев</option>
-            <option value="8-9 месяцев" >8-9 месяцев</option>
-             <option value="4-5 месяцев" disabled="disabled" >4-5 месяцев</option>
-          </select></td>
-        </tr>
-
-    <tbody><tr>
-      <td width="200"><p>Товары и/или услуги, для которых будет использоваться знак:<font color="red">*</font></p></td>
-      <td><textarea name="vidDeat" id="vidDeat" cols="40" rows="4"></textarea></td>
-      </td>
-    </tr>
-      <tr>
-        <td><p>Классы МКТУ.<br><br>Если вы знаете к каким классам МКТУ относятся ваши товары или услуги, выберите классы.</p></td>
-        <td><table class="text_br" border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tbody>
-            <tr>
-              <td><input name="mktu[]" title="Химические продукты, предназначенные для использования в промышленных, научных целях, в фотографии, сельском хозяйстве, садоводстве и лесоводстве; необработанные синтетические смолы, необработанные пластические материалы; удобрения; составы для тушения огня; препараты для закалки и пайки металлов; препараты для консервирования пищевых продуктов; дубильные вещества; клеящие вещества для промышленных целей." value="01" alt="01" type="checkbox" />
-                01<br /><br />
-                <input name="mktu[]" title="Краски, олифы, лаки; защитные средства, предохраняющие металлы от коррозии и древесину от разрушения; красящие вещества; протравы; необработанные природные смолы; листовые и порошкообразные металлы, используемые для художественно-декоративных целей и художественной печати." value="02" type="checkbox" />
-                02<br /><br />
-                <input name="mktu[]" title="Препараты для отбеливания и прочие вещества для стирки; препараты для чистки, полирования, обезжиривания и абразивной обработки; мыла; парфюмерные изделия, эфирные масла, косметика, лосьоны для волос; зубные порошки и пасты." value="03" type="checkbox" />
-                03<br /><br />
-                <input name="mktu[]" title="Технические масла и смазки; смазочные материалы; составы для поглощения, смачивания и связывания пыли; топлива (в том числе моторные бензины) и осветительные материалы; фитили и свечи для освещения." value="04" type="checkbox" />
-                04<br /><br />
-                <input name="mktu[]"title="Фармацевтические и ветеринарные препараты; гигиенические препараты для медицинских целей; диетическое питание и вещества для медицинских или ветеринарных целей, детское питание; пищевые добавки для человека и животных; пластыри, перевязочные материалы; материалы для пломбирования зубов и изготовления зубных слепков; дезинфицирующие средства; препараты для уничтожения вредных животных; фунгициды, гербициды." value="05" type="checkbox" />
-                05<br /><br /></td>
-              <td><input name="mktu[]"title="Обычные металлы и их сплавы; металлические строительные материалы; передвижные металлические конструкции и сооружения; металлические материалы для рельсовых путей; металлические тросы и проволока [неэлектрические]; скобяные и замочные изделия; металлические трубы; сейфы; изделия из обычных металлов, не относящиеся к другим классам; руды." value="06" type="checkbox" />
-                06<br /><br />
-                <input name="mktu[]"title="Машины и станки; двигатели (за исключением предназначенных для наземных транспортных средств); соединения и элементы передач (за исключением предназначенных для наземных транспортных средств); сельскохозяйственные орудия, иные чем орудия с ручным управлением; инкубаторы; торговые автоматы." value="07" type="checkbox" />
-                07<br /><br />
-                <input name="mktu[]"title="Ручные орудия и инструменты; ножевые изделия, вилки и ложки; холодное оружие; бритвы." value="08" type="checkbox" />
-                08<br /><br />
-                <input name="mktu[]"title="Приборы и инструменты научные, морские, геодезические, фотографические, кинематографические, оптические, для взвешивания, измерения, сигнализации, контроля (проверки), спасания и обучения; приборы и инструменты для передачи, распределения, трансформации, накопления, регулирования или управления электричеством; аппаратура для записи, передачи, воспроизведения звука или изображений; магнитные носители информации, диски звукозаписи; компакт-диски, DVD и другие цифровые носители информации; механизмы для аппаратов с предварительной оплатой; кассовые аппараты, счетные машины, оборудование для обработки информации и компьютеры; программное обеспечение; оборудование для тушения огня." value="09" type="checkbox" />
-                09<br /><br />
-                <input name="mktu[]"title="Приборы и инструменты хирургические, медицинские, стоматологические и ветеринарные; протезы конечностей, глазные и зубные протезы; ортопедические изделия; материалы для наложения швов." value="10" type="checkbox" />
-                10<br /><br /></td>
-              <td><input name="mktu[]" title="Устройства для освещения, нагрева, тепловой обработки пищевых продуктов, для охлаждения, сушки, вентиляции, водораспределительные и санитарно-технические."value="11" type="checkbox" />
-                11<br /><br />
-                <input name="mktu[]" title="Транспортные средства; аппараты, перемещающиеся по земле, воде и воздуху." value="12" type="checkbox" />
-                12<br /><br />
-                <input name="mktu[]" title="Огнестрельное оружие; боеприпасы и снаряды; взрывчатые вещества; фейерверки." value="13" type="checkbox" />
-                13<br /><br />
-                <input name="mktu[]" title="Благородные металлы и их сплавы, изделия или покрытия из них, не относящиеся к другим классам; ювелирные изделия, бижутерия, драгоценные камни; часы и прочие хронометрические приборы." value="14" type="checkbox" />
-                14<br /><br />
-                <input name="mktu[]" title="Музыкальные инструменты." value="15" type="checkbox" />
-                15<br /><br /></td>
-              <td><input name="mktu[]" title="Бумага, картон и изделия из них, не относящиеся к другим классам; печатная продукция; материалы для переплетных работ; фотоснимки; писчебумажные товары; клейкие вещества для канцелярских и бытовых целей; принадлежности для художников; кисти; пишущие машины и конторские принадлежности (за исключением мебели); учебные материалы и наглядные пособия (за исключением аппаратуры); пластмассовые материалы для упаковки (не относящиеся к другим классам); шрифты; клише типографские." value="16" type="checkbox" />
-                16<br /><br />
-                <input name="mktu[]" title="Каучук, резина, гуттаперча, асбест, слюда и изделия из этих материалов, не относящиеся к другим классам; изделия из частично обработанных пластмасс; материалы для конопачения, уплотнения и изоляции; неметаллические гибкие трубы." value="17" type="checkbox" />
-                17<br /><br />
-                <input name="mktu[]" title="Кожа и имитация кожи, изделия из них, не относящиеся к другим классам; шкуры животных; дорожные сундуки, чемоданы; зонты от дождя и солнца; трости; хлысты, кнуты, конская сбруя и шорные изделия." value="18" type="checkbox" />
-                18<br /><br />
-                <input name="mktu[]" title="Неметаллические строительные материалы; неметаллические жесткие трубы для строительных целей; асфальт, смолы и битум; неметаллические передвижные конструкции и сооружения; неметаллические памятники." value="19" type="checkbox" />
-                19<br /><br />
-                <input name="mktu[]" title="Мебель, зеркала, обрамления для картин и т.п.; изделия, не относящиеся к другим классам, из дерева, пробки, камыша, тростника, ивы, рога, кости, слоновой кости, китового уса, панциря черепах, раковин, янтаря, перламутра, морской пенки, из заменителей этих материалов или из пластмасс." value="20" type="checkbox" />
-                20 <br /><br /></td>
-              <td><input name="mktu[]" title="Домашняя или кухонная утварь и посуда; расчески и губки; щетки (за исключением кистей); материалы для щеточных изделий; приспособления для чистки и уборки; мочалки металлические; необработанное или частично обработанное стекло (за исключением строительного стекла); изделия из стекла, фарфора и фаянса, не относящиеся к другим классам." value="21" type="checkbox" />
-                21<br /><br />
-                <input name="mktu[]"title="Канаты, веревки, бечёвки, сети, палатки, навесы, брезент, паруса и мешки, не относящиеся к другим классам; набивочные материалы (за исключением из резиновых и пластических материалов); текстильное волокнистое сырьё." value="22" type="checkbox" />
-                22<br /><br />
-                <input name="mktu[]"title="Нити текстильные и пряжа." value="23" type="checkbox" />
-                23<br /><br />
-                <input name="mktu[]" title="Ткани и текстильные изделия, не относящиеся к другим классам; покрывала постельные и скатерти; одеяла." value="24" type="checkbox" />
-                24<br /><br />
-                <input name="mktu[]" title="Одежда, обувь, головные уборы." value="25" type="checkbox" />
-                25<br /><br /></td>
-              <td><input name="mktu[]" title="Кружева и вышитые изделия, тесьма и ленты; пуговицы, кнопки, крючки и блочки, булавки и иглы; искусственные цветы." value="26" type="checkbox" />
-                26<br /><br />
-                <input name="mktu[]" title="Ковры, циновки, маты, линолеум и прочие покрытия для полов; стенные обои и обивочные материалы (нетекстильные)." value="27" type="checkbox" />
-                27<br /><br />
-                <input name="mktu[]" title="Игры, игрушки; гимнастические и спортивные товары, не относящиеся к другим классам; ёлочные украшения." value="28" type="checkbox" />
-                28<br /><br />
-                <input name="mktu[]"title="Мясо, рыба, птица и дичь; мясные экстракты; овощи и фрукты консервированные, сушеные и подвергнутые тепловой обработке; желе, варенье, компоты; яйца; молоко и молочные продукты; масла и жиры пищевые." value="29" type="checkbox" />
-                29<br /><br />
-                <input name="mktu[]" title="Кофе, чай, какао и заменители кофе; рис; тапиока (маниока) и саго; мука и зерновые продукты; хлебобулочные изделия, кондитерские изделия; мороженое; сахар, мед, сироп из патоки; дрожжи, пекарные порошки; соль; горчица; уксус, приправы; пряности; лед для охлаждения." value="30" type="checkbox" />
-                30<br /><br /></td>
-              <td><input name="mktu[]" title="Зерно и сельскохозяйственные, садово-огородные и лесные продукты, не относящиеся к другим классам; живые животные; свежие фрукты и овощи; семена; живые растения и цветы; корма для животных; солод." value="31" type="checkbox" />
-                31<br /><br />
-                <input name="mktu[]" title="Пиво; минеральные и газированные воды и прочие безалкогольные напитки; фруктовые напитки и фруктовые соки; сиропы и прочие составы для изготовления напитков." value="32" type="checkbox" />
-                32<br /><br />
-                <input name="mktu[]" title="Алкогольные напитки (за исключением пива)." value="33" type="checkbox" />
-                33<br /><br />
-                <input name="mktu[]" title="Табак, курительные принадлежности; спички." value="34" type="checkbox" />
-                34<br /><br />
-                <input name="mktu[]" title="Реклама; менеджмент в сфере бизнеса; административная деятельность в сфере бизнеса; офисная служба." value="35" type="checkbox" />
-                35<br /><br /></td>
-              <td><input name="mktu[]" title="Страхование; финансовая деятельность; кредитно-денежные операции; операции с недвижимостью." value="36" type="checkbox" />
-                36<br /><br />
-                <input name="mktu[]"title="Строительство; ремонт; установка оборудования." value="37" type="checkbox" />
-                37<br /><br />
-                <input name="mktu[]" title="Телекоммуникации." value="38" type="checkbox" />
-                38<br /><br />
-                <input name="mktu[]" title="Транспортировка; упаковка и хранение товаров; организация путешествий." value="39" type="checkbox" />
-                39<br /><br />
-                <input name="mktu[]" title="Обработка материалов." value="40" type="checkbox" />
-                40<br /><br /></td>
-              <td><input name="mktu[]" title="Воспитание; обеспечение учебного процесса; развлечения; организация спортивных и культурно-просветительных мероприятий." value="41" type="checkbox" />
-                41<br /><br />
-                <input name="mktu[]" title="Научные и технологические услуги и относящиеся к ним научные исследования и разработки; услуги по промышленному анализу и научным исследованиям; разработка и усовершенствование технического и программного обеспечения компьютеров." value="42" type="checkbox" />
-                42<br /><br />
-                <input name="mktu[]" title="Услуги по обеспечению пищевыми продуктами и напитками; обеспечение временного проживания." value="43" type="checkbox" />
-                43<br /><br />
-                <input name="mktu[]" title="Медицинские услуги; ветеринарные услуги; услуги в области гигиены и косметики для людей и животных; услуги в области сельского хозяйства, огородничества и лесоводства." value="44" type="checkbox" />
-                44<br /><br />
-                <input name="mktu[]" title="Услуги юридические; службы безопасности для защиты имущества и индивидуальных лиц; персональные и социальные услуги, оказываемые другим для удовлетворения потребностей индивидуальных лиц." value="45" type="checkbox" />
-                45<br /><br /></td>
-            </tr>
-          </tbody>
-        </table></td>
-      </tr>
-      <tr>
-        <td><p>Ваши комментарии:<br><br><br><br></p></td>
-        <td><textarea name="other" id="other" cols="37" rows="4"></textarea></td>
-      </tr>
-      <tr>
-        <td><p>Наименование заявителя:<font color="red">*</font></p></td>
-        <td><input name="namez" id="namez" size="35" /></td>
-      </tr>
-      <tr>
-        <td><p>Реквизиты заявителя:<font color="red">*</font><br><br><br><br><br><br><br></p></td>
-        <td><p>
-          <textarea name="rekvizit1" cols="37" rows="4"></textarea>
-        </p>
-        <p>
-          <input name="rekvizit2" id="rekvizit2" type="file" />
-        </p><p style="margin-top: -10px"><em>(добавить файл с реквизитами)</em></p>
-        </td>
-      </tr>
-      <tr>
-        <td><p>Эл. почта контактного лица:<font color="red">*</font></p></td>
-        <td><input name="elmail" id="elmail" size="35" /></td>
-      </tr>
-      <tr>
-        <td><p>Телефон:<font color="red">*</font></p></td>
-        <td><input name="cphone" size="35" /></td>
-      </tr>
-      <tr>
-        <td><p>Контактное лицо:<font color="red">*</font></p></td>
-        <td><input name="siteurl2" size="35" /></td>
-      </tr>
-      <tr>
-        <td colspan="2"><font color="red"><br>* поля обязательны для заполнения</font></td>
-      </tr>
-  </tbody></table>
-
-    <input value="ОЧИСТИТЬ" name="reset" type="reset" id="freset" style="margin-left: 30px;">
-    <input name="Submit" value="ОТОСЛАТЬ  ЗАЯВКУ" type="submit">
-
-</form>
-</body>
-    <script type="text/javascript">
-    function CheckForm(form){
-
-        if ($("#vidDeat").val() ==""){
-            alert("Не заполнено поле Вид деятельности фирмы");
-            return false;
-        }
-        if ($("#namez").val() ==""){
-            alert("Не заполнено поле Наименование заявителя");
-            return false;
-        }
-        if ($("#elmail").val() ==""){
-            alert("Не введен адрес e-mail");
-            return false;
-        }
-
-
-
-        return true;
-    }
-        function vidizo(){
-            $("#editslov").attr("disabled","disabled");
-            $("#editizo").removeAttr("disabled");
-            $("#editcombo1").attr("disabled","disabled");
-            $("#editcombo2").attr("disabled","disabled");
-            $("#srokIsp").html('<option value="8-10 дней" selected="selected">8-10 дней</option> <option value="3-4 дня" >3-4 дня</option>');
-        };
-        function vidslov(){
-            $("#editslov").removeAttr("disabled");
-            $("#editizo").attr("disabled","disabled");
-            $("#editcombo1").attr("disabled","disabled");
-            $("#editcombo2").attr("disabled","disabled");
-            $("#srokIsp").html('<option value="1-2 дня">1-2 дня</option><option value="3-4 дня" selected="selected">3-4 дня</option>');
-
-        };
-        function vidcombo(){
-            $("#editslov").attr("disabled","disabled");
-            $("#editizo").attr("disabled","disabled");
-            $("#editcombo1").removeAttr("disabled");
-            $("#editcombo2").removeAttr("disabled");
-            $("#srokIsp").html('<option value="8-10 дней" selected="selected">8-10 дней</option> <option value="3-4 дня" >3-4 дня</option>');
-        };
-        function ppp(){
-            if ($("#ppp").val() == "1"){
-                $("#srokIsp").removeAttr("disabled");
-            }else{
-                $("#srokIsp").attr("disabled","disabled");
-            }
-
-        };
-            jQuery(function(){
-                $('#vidslov').change(vidslov);
-                $('#vidizo').change(vidizo);
-                $('#vidcombo').change(vidcombo);
-                $('#freset').click(vidslov);
-                $('#ppp').change(ppp);
-
-
-            })
-    </script>
-
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :research %><br />
+    <%= f.check_box :research %>
+  </div>
+  <div class="field">
+    <%= f.label :research_limit %><br />
+    <%= f.text_field :research_limit %>
+  </div>
+  <div class="field">
+    <%= f.label :registration_limit %><br />
+    <%= f.text_field :registration_limit %>
+  </div>
+  <div class="field">
+    <%= f.label :service %><br />
+    <%= f.text_area :service %>
+  </div>
+  <div class="field">
+    <%= f.label :mktu %><br />
+    <%= f.text_field :mktu %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :requisites %><br />
+    <%= f.text_area :requisites %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>

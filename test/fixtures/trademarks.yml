@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  research: false
+  research_Limit: MyString
+  registration_limit: 
+  service: MyText
+  mktu: MyString
+  comments: MyText
+  name: MyString
+  requisites: MyText
+  email: MyString
+  phone: MyString
+  contact: MyString
+
+two:
+  title: MyString
+  research: false
+  research_Limit: MyString
+  registration_limit: 
+  service: MyText
+  mktu: MyString
+  comments: MyText
+  name: MyString
+  requisites: MyText
+  email: MyString
+  phone: MyString
+  contact: MyString
