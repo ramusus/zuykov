@@ -4,35 +4,40 @@ require 'bundler/capistrano'
 require 'capistrano/deepmodules'
 
 set :application, "zuykov"
-set :deploy_to, "/var/www/#{application}"
+set :deploy_to, "/data/www/zuykov.ru"
 set :deploy_via, :remote_cache
 set :use_sudo, true
-set :user, "ram"
+set :user, "www"
 
-set :rvm_ruby_string, '1.9.2@zuykov'
-set :rvm_type, :system
+set :rvm_ruby_string, "1.9.2"
+set :rvm_type, :user
 
 set :scm, "git"
-set :repository,  "git@ram.unfuddle.com:ram/zuykov.git"
+set :repository,  "git@ram.unfuddle.com:ram/#{application}.git"
 set :branch, "master"
 
-role :web, "zuykov.movister.ru"                          # Your HTTP server, Apache/etc
-role :app, "zuykov.movister.ru"                          # This may be the same as your `Web` server
-role :db,  "zuykov.movister.ru", :primary => true # This is where Rails migrations will run
+role :web, "lectures.dev.infolio.ru"                          # Your HTTP server, Apache/etc
+role :app, "lectures.dev.infolio.ru"                          # This may be the same as your `Web` server
+role :db,  "lectures.dev.infolio.ru", :primary => true # This is where Rails migrations will run
 
 default_run_options[:pty] = true
 
-after "bundle:install", "deploy:migrate"
+after "bundle:install", "deploy:auto_migrate"
 
-# If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
   task :start do
-    run "#{try_sudo} sudo /etc/init.d/nginx start"
+    run "cd #{deploy_to}/current && ./server start"
   end
   task :stop do
-    run "#{try_sudo} sudo /etc/init.d/nginx stop"
+    run "cd #{deploy_to}/current && ./server stop"
    end
   task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} sudo /etc/init.d/nginx restart"
+    run "cd #{deploy_to}/current && ./server restart"
+  end
+  task :auto_migrate do
+    run "cd #{deploy_to}/current && rake RAILS_ENV=production db:auto:migrate"
+  end
+  task :load_db do
+    run "cd #{deploy_to}/current && rake RAILS_ENV=production db:load"
   end
 end

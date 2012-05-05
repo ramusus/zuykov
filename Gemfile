@@ -8,9 +8,16 @@ gem 'devise' # rails_admin dependency
 gem "ckeditor", "3.7.0.rc3"
 gem 'paperclip', '~> 2.4'
 gem 'yaml_db', :git => 'git://github.com/lostapathy/yaml_db.git'
-gem 'pg'
 
-gem 'sqlite3'
+group :development do
+  gem 'pg'
+end
+group :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'mysql2'
+end
 
 gem 'capistrano'
 gem 'rvm-capistrano'

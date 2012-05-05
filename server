@@ -1,0 +1,33 @@
+#!/bin/bash
+PORT=3005
+
+usage() {
+    echo "$0 {start|stop|restart}"
+    exit 1
+}
+
+
+start() {
+   echo "Starting server"
+   passenger start -p $PORT -a 127.0.0.1 -d -e production
+}
+
+stop() {
+   echo "Stoping server"
+   passenger stop -p $PORT
+}
+
+restart() {
+    stop
+    start
+}
+
+action=$1
+shift
+case $action in
+    "start") start;;
+    "stop") stop;;
+    "pids") pids;;
+    "restart") restart;;
+    *) echo $(usage);;
+esac
