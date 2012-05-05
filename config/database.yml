@@ -16,7 +16,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: zuykov
+  database: zuykov_development
   pool: 5
-  username: zuykov_development
+  username: zuykov
   password: 87o4243yqhwboe56w43

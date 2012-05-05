@@ -22,7 +22,7 @@ role :db,  "lectures.dev.infolio.ru", :primary => true # This is where Rails mig
 
 default_run_options[:pty] = true
 
-after "bundle:install", "deploy:auto_migrate"
+after "bundle:install", "deploy:migrate"
 
 namespace :deploy do
   task :start do
@@ -35,7 +35,9 @@ namespace :deploy do
     run "cd #{deploy_to}/current && ./server restart"
   end
   task :auto_migrate do
-    run "cd #{deploy_to}/current && rake RAILS_ENV=production db:auto:migrate"
+    rake = fetch(:rake, "rake")
+    rails_env = fetch(:rails_env, "production")
+    run "cd #{latest_release} && #{rake} RAILS_ENV=#{rails_env} db:auto:migrate"
   end
   task :load_db do
     run "cd #{deploy_to}/current && rake RAILS_ENV=production db:load"
