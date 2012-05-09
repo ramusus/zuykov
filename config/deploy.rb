@@ -40,6 +40,8 @@ namespace :deploy do
     run "cd #{latest_release} && #{rake} RAILS_ENV=#{rails_env} db:auto:migrate"
   end
   task :load_db do
-    run "cd #{deploy_to}/current && rake RAILS_ENV=production db:load"
+    rake = fetch(:rake, "rake")
+    rails_env = fetch(:rails_env, "production")
+    run "cd #{latest_release} && #{rake} RAILS_ENV=#{rails_env} db:load"
   end
 end
