@@ -27,7 +27,7 @@
 </head>
 <body>
     <div class="page">
-        <header class="page-header" role="banner">
+        <header class="page-header <%= yield :header_class %>" role="banner">
             <div class="page-header-logo"><a href="/"><img src="/i/logo.jpg" alt=""></a></div>
             <div class="clearfix">
                 <div class="col_l">
@@ -146,6 +146,14 @@
 <script>
     $(document).ready(function() {
         $(".fancybox").fancybox();
+
+        var jMenuItem = $('a[href="<%= request.fullpath %>/"]').parent();
+        if(jMenuItem.is('.nav_sub-item')) {
+            jMenuItem.addClass('nav_sub-item_act');
+            $(jMenuItem).html($('a', jMenuItem).html());
+        } else if(jMenuItem.is('.nav-item')) {
+            jMenuItem.addClass('nav-item_act');
+        }
 
         //Tabs
         $(".filter a").click(function() {
