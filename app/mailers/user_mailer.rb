@@ -2,9 +2,10 @@
 class UserMailer < ActionMailer::Base
   default from: "no-reply@zuykov.ru"
 
-  def new_trademark(user, trademark)
+  def new_trademark(user, trademark, request)
     @trademark = trademark
     @user = user
+    @request = request
     mail(:to => @user.email, :subject => "Новая заявка на регистрацию товарного знака на сайте zuykov.ru")
   end
 

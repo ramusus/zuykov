@@ -15,7 +15,7 @@ class TrademarksController < ApplicationController
     respond_to do |format|
       if @trademark.save
         User.emailable.each do |user|
-          UserMailer.new_trademark(user, @trademark).deliver
+          UserMailer.new_trademark(user, @trademark, request).deliver
         end
         format.html { render action: "success" }
       else
