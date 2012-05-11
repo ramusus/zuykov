@@ -14,7 +14,7 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       if @question.save
-        for user in User.find_by_email_notifications(true)
+        for user in User.emailable
           UserMailer.new_question(user, @question).deliver
         end
         format.html { render action: "success" }

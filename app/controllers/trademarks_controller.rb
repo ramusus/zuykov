@@ -14,7 +14,7 @@ class TrademarksController < ApplicationController
 
     respond_to do |format|
       if @trademark.save
-        for user in User.find_by_email_notifications(true)
+        for user in User.emailable
           UserMailer.new_trademark(user, @trademark).deliver
         end
         format.html { render action: "success" }
