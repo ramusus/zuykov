@@ -14,7 +14,7 @@ class QuestionsController < ApplicationController
 
     respond_to do |format|
       if @question.save
-        for user in User.emailable
+        User.emailable.each do |user|
           UserMailer.new_question(user, @question).deliver
         end
         format.html { render action: "success" }
