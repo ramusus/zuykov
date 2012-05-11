@@ -31,16 +31,16 @@
             <div class="page-header-logo"><a href="/"><img src="/i/logo.jpg" alt=""></a></div>
             <div class="clearfix">
                 <div class="col_l">
-                    <%= @header_quote and @header_quote.content.html_safe %>
+                    <%= @header_quote %>
                 </div>
                 <div class="col_r">
-                    <%= @header_phones and @header_phones.content.html_safe %>
+                    <%= @header_phones %>
                 </div>
             </div>
 
             <hr class="hr_dbl">
 
-            <%= @menu and @menu.content.html_safe %>
+            <%= @menu %>
         </header><!-- /Page header -->
 
         <div class="page-content">
@@ -55,19 +55,19 @@
                 </div><!-- /Column Center -->
 
                 <div class="col_l">
-                    <% if @left_announce %>
+                    <% if @left_announce.length > 0 %>
                         <article class="event">
-                            <%= @left_announce.content.html_safe %>
+                            <%= @left_announce %>
                         </article>
                     <% end %>
 
                     <section class="work">
-                        <%= @left_in_process and @left_in_process.content.html_safe %>
+                        <%= @left_in_process %>
                     </section>
 
                    <section class="clients">
                        <h2 class="title clients-title">Наши клиенты</h2>
-                       <%= @left_clients and @left_clients.content.html_safe %>
+                       <%= @left_clients %>
                        <p class="clients-all"><a href="/clients/">Все клиенты</a></p>
                    </section>
                 </div><!-- /Column Left -->
@@ -107,7 +107,7 @@
                        </div>
                        <section class="social_news">
                            <h2 class="title social_news-title">Наши новости<br> в&nbsp;социальных сетях:</h2>
-                           <%= @right_social and @right_social.content.html_safe %>
+                           <%= @right_social %>
                            <p class="social_news-all"><a href="/news/">Архив новостей на сайте</a></p>
                        </section>
                     </section>
@@ -118,7 +118,7 @@
 
             <section class="membership">
                 <h2 class="title membership-title">Членство в международных организациях</h2>
-                <%= @membership and @membership.content.html_safe %>
+                <%= @membership %>
             </section>
         </div><!-- /Page content -->
     </div><!-- /Page -->
@@ -126,11 +126,11 @@
     <footer class="page-footer" role="contentinfo">
         <div class="clearfix">
             <div class="col_l">
-                <%= @footer_copyright and @footer_copyright.content.html_safe %>
-                <p class="page-footer-nav"><a href="/contacts/">Контакты</a> <a href="/job/">Вакансии</a></p>
+                <%= @footer_copyright %>
+                <p class="page-footer-nav"><a href="/contacts/">Контакты</a> <!-- a href="/job/">Вакансии</a --></p>
             </div>
             <div class="col_r">
-                <%= @footer_phones and @footer_phones.content.html_safe %>
+                <%= @footer_phones %>
             </div>
         </div>
     </footer><!-- /Page footer -->

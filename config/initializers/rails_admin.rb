@@ -144,10 +144,10 @@ RailsAdmin.config do |config|
 
   config.model Chunk do
     list do
-      include_fields :title, :code, :content
+      include_fields :title, :code, :visible, :content
     end
     edit do
-      include_fields :title, :code
+      include_fields :title, :code, :visible
       include_fields :content do
         ckeditor true
         ckeditor_config_js '/javascripts/ckeditor/config.js'

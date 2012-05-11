@@ -7,16 +7,16 @@ class ApplicationController < ActionController::Base
     @news_all = News.where('of_company = False').limit(3)
     @news_company = News.where('of_company = True').limit(3)
 
-    @header_quote = Chunk.find_by_code('header_quote')
-    @header_phones = Chunk.find_by_code('header_phones')
-    @left_announce = Chunk.find_by_code('left_announce')
-    @left_in_process = Chunk.find_by_code('left_in_process')
-    @left_clients = Chunk.find_by_code('left_clients')
-    @right_social = Chunk.find_by_code('right_social')
-    @membership = Chunk.find_by_code('membership')
-    @footer_copyright = Chunk.find_by_code('footer_copyright')
-    @footer_phones = Chunk.find_by_code('footer_phones')
-    @menu = Chunk.find_by_code('menu')
+    ['header_quote','header_phones','left_announce','left_in_process','left_clients','right_social','membership','footer_copyright','footer_phones','menu'].each do |var_name|
+      chunk = Chunk.find_by_code(var_name)
+      if chunk and chunk.visible
+        chunk = chunk.content.html_safe
+      else
+        chunk = ''
+      end
+      self.instance_variable_set('@' + var_name, chunk)
+    end
+
   end
 
   def set_locale

@@ -35,6 +35,7 @@ ru:
         title: "Название"
         code: "Код"
         content: "Содержимое"
+        visible: "Отображать?"
       user:
         email: "Email"
         password: "Пароль"
